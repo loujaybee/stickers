@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cursor Stickers V6 - HTML Version</title>
+    <!-- Import React and other dependencies via CDN -->
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+    <!-- Import Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Carter+One&family=Bungee+Shade&family=VT323&family=Press+Start+2P&family=Silkscreen&family=Fredoka+One&family=Pacifico&family=Rubik+Bubbles&family=Righteous&family=Bungee+Inline&display=swap"
+        rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: #f0f2f5;
+            font-family: system-ui, -apple-system, sans-serif;
+            padding: 2rem;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 2rem;
+            color: #2C3E50;
+            font-family: 'Righteous', sans-serif;
+            font-size: 3rem;
+            text-shadow: 2px 2px 0 #FF00FF, -2px -2px 0 #00FFFF;
+        }
+
+        .sticker-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            padding: 1rem;
+        }
+
+        .sticker-container {
+            background: white;
+            border-radius: 12px;
+            padding: 1rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            transition: transform 0.3s ease;
+        }
+
+        .sticker-container:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        .sticker {
+            width: 200px;
+            height: 200px;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .hexagon {
+            width: 180px;
+            height: 180px;
+            background: linear-gradient(135deg, #FF00FF, #00FFFF);
+            clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            animation: float 4s ease-in-out infinite;
+        }
+
+        .monitor-hero {
+            width: 120px;
+            height: 80px;
+            background: #333;
+            border-radius: 10px;
+            position: relative;
+            border: 3px solid #FFFF00;
+        }
+
+        .monitor-screen {
+            width: 100px;
+            height: 60px;
+            background: #00FFFF;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            border: 2px solid #FFFF00;
+        }
+
+        .monitor-face {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .monitor-eyes {
+            display: flex;
+            gap: 20px;
+        }
+
+        .monitor-eye {
+            width: 16px;
+            height: 16px;
+            background: #333;
+            border-radius: 50%;
+        }
+
+        .monitor-mouth {
+            width: 40px;
+            height: 20px;
+            border-bottom: 4px solid #333;
+            border-radius: 0 0 20px 20px;
+            margin-top: 10px;
+        }
+
+        .monitor-arms {
+            position: absolute;
+            width: 200px;
+            height: 100%;
+            pointer-events: none;
+        }
+
+        .monitor-arm {
+            position: absolute;
+            width: 40px;
+            height: 80px;
+            background: #333;
+            border: 3px solid #FFFF00;
+            border-radius: 20px;
+        }
+
+        .monitor-arm.left {
+            left: -40px;
+            transform: rotate(-30deg);
+        }
+
+        .monitor-arm.right {
+            right: -40px;
+            transform: rotate(30deg);
+        }
+
+        .monitor-bicep {
+            position: absolute;
+            width: 30px;
+            height: 30px;
+            background: #333;
+            border: 3px solid #FFFF00;
+            border-radius: 50%;
+        }
+
+        .monitor-bicep.left {
+            left: -45px;
+            top: -20px;
+        }
+
+        .monitor-bicep.right {
+            right: -45px;
+            top: -20px;
+        }
+
+        .sticker-text {
+            position: absolute;
+            bottom: 20px;
+            width: 100%;
+            text-align: center;
+            font-family: 'Permanent Marker', cursive;
+            font-size: 24px;
+            color: white;
+            text-shadow: 2px 2px 0 black, -2px -2px 0 black, 2px -2px 0 black, -2px 2px 0 black;
+            line-height: 1.2;
+        }
+
+        @keyframes float {
+            0% {
+                transform: translateY(0px);
+            }
+
+            50% {
+                transform: translateY(-10px);
+            }
+
+            100% {
+                transform: translateY(0px);
+            }
+        }
+
+        @keyframes pulse {
+            0% {
+                transform: scale(1);
+            }
+
+            50% {
+                transform: scale(1.05);
+            }
+
+            100% {
+                transform: scale(1);
+            }
+        }
+
+        .sticker-container:hover .hexagon {
+            animation: pulse 1s ease-in-out infinite;
+        }
+
+        .sticker-info {
+            margin-top: 1rem;
+            text-align: center;
+            font-size: 0.875rem;
+            color: #666;
+            font-family: 'VT323', monospace;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="root"></div>
+
+    <script type="text/babel">
+        function Sticker({ message, style }) {
+            return (
+                <div className="sticker-container">
+                    <div className="sticker">
+                        <div className="hexagon">
+                            <div className="monitor-hero">
+                                <div className="monitor-screen">
+                                    <div className="monitor-face">
+                                        <div className="monitor-eyes">
+                                            <div className="monitor-eye"></div>
+                                            <div className="monitor-eye"></div>
+                                        </div>
+                                        <div className="monitor-mouth"></div>
+                                    </div>
+                                </div>
+                                <div className="monitor-arms">
+                                    <div className="monitor-arm left"></div>
+                                    <div className="monitor-arm right"></div>
+                                    <div className="monitor-bicep left"></div>
+                                    <div className="monitor-bicep right"></div>
+                                </div>
+                            </div>
+                            <div className="sticker-text">{message}</div>
+                        </div>
+                    </div>
+                    <div className="sticker-info">
+                        <p>{style}</p>
+                    </div>
+                </div>
+            );
+        }
+
+        function App() {
+            const stickers = [
+                {
+                    message: "Unlocking vibe\ncoding at\nenterprises",
+                    style: "Tech Hero + Hexagon + Cyber Pop + Muscular Monitor"
+                },
+                // Add more stickers here following the same pattern
+            ];
+
+            return (
+                <div className="container">
+                    <h1>Cursor Stickers V6 - HTML Version</h1>
+                    <p style={{ textAlign: 'center', marginBottom: '2rem', color: '#666', fontSize: '1.1rem' }}>
+                        A collection of unique sticker designs featuring different styles, shapes, and tech-inspired imagery.
+                        Each sticker combines playful visuals with messages about coding with Cursor.
+                    </p>
+                    <div className="sticker-grid">
+                        {stickers.map((sticker, index) => (
+                            <Sticker key={index} {...sticker} />
+                        ))}
+                    </div>
+                </div>
+            );
+        }
+
+        const root = ReactDOM.createRoot(document.getElementById('root'));
+        root.render(<App />);
+    </script>
+</body>
+
+</html>

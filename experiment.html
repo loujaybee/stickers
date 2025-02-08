@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Modern Sticker Collection - A fun collection of tech-themed stickers">
+    <meta name="theme-color" content="#4F46E5">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Modern Sticker Collection</title>
+
+    <!-- React and ReactDOM from CDN -->
+    <script crossorigin src="https://cdnjs.cloudflare.com/ajax/libs/react/18.2.0/umd/react.production.min.js"></script>
+    <script crossorigin
+        src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/18.2.0/umd/react-dom.production.min.js"></script>
+    <script crossorigin src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/7.23.5/babel.min.js"></script>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+        /* Fonts */
+        @import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Carter+One&family=VT323&family=Press+Start+2P&family=Fredoka+One&family=Righteous&display=swap');
+
+        /* Layout */
+        .sticker-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            padding: 2rem;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        /* Sticker Base */
+        .sticker {
+            width: 300px;
+            height: 300px;
+            position: relative;
+            margin: 20px;
+        }
+
+        /* Patterns */
+        .retro-pattern {
+            background-image: radial-gradient(circle at 1px 1px, #000 1px, transparent 0);
+            background-size: 20px 20px;
+        }
+
+        .neo-grid {
+            background-image:
+                linear-gradient(to right, rgba(255, 255, 255, .1) 1px, transparent 1px),
+                linear-gradient(to bottom, rgba(255, 255, 255, .1) 1px, transparent 1px);
+            background-size: 20px 20px;
+        }
+
+        .circuit-pattern {
+            background-image:
+                radial-gradient(circle at 10px 10px, #fff 2px, transparent 2px),
+                linear-gradient(to right, rgba(255, 255, 255, .2) 1px, transparent 1px),
+                linear-gradient(to bottom, rgba(255, 255, 255, .2) 1px, transparent 1px);
+            background-size: 40px 40px;
+        }
+    </style>
+</head>
+
+<body class="bg-gray-100">
+    <div id="root"></div>
+
+    <script type="text/babel">
+        const Sticker = ({ children, background, pattern, shape = "rounded-3xl" }) => (
+            <div className={`sticker shadow-xl ${shape}`}>
+                <div className={`w-full h-full ${background} ${pattern} ${shape} p-8 flex items-center justify-center`}>
+                    {children}
+                </div>
+            </div>
+        );
+
+        const StickerText = ({ text, font, color, size = "text-3xl", outline = "text-white" }) => (
+            <div className={`text-center font-bold ${size} ${color}`} style={{
+                fontFamily: font,
+                textShadow: `-2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000`,
+                lineHeight: '1.4',
+                letterSpacing: '0.05em'
+            }}>
+                {text.split('\n').map((line, i) => (
+                    <div key={i} className="mb-4">
+                        <span className="px-2 py-1">{line}</span>
+                    </div>
+                ))}
+            </div>
+        );
+
+        const App = () => {
+            return (
+                <div className="container mx-auto py-8">
+                    <h1 className="text-4xl font-bold text-center mb-8">Modern Sticker Collection</h1>
+                    <div className="sticker-grid">
+                        {/* Retro Tech Sticker */}
+                        <Sticker
+                            background="bg-indigo-900"
+                            pattern="retro-pattern"
+                            shape="rounded-xl">
+                            <StickerText
+                                text="VIBE CODING\nAT\nENTERPRISES"
+                                font="'Press Start 2P'"
+                                color="text-yellow-300"
+                                size="text-2xl"
+                            />
+                        </Sticker>
+
+                        {/* Synthwave Sticker */}
+                        <Sticker
+                            background="bg-gradient-to-br from-purple-600 to-pink-500"
+                            pattern="neo-grid"
+                            shape="rounded-full">
+                            <StickerText
+                                text="PAIR PROGRAMMING\nWITH MY\nAI BESTIE"
+                                font="Righteous"
+                                color="text-cyan-300"
+                            />
+                        </Sticker>
+
+                        {/* Kawaii Tech Sticker */}
+                        <Sticker
+                            background="bg-pink-200"
+                            shape="rounded-3xl">
+                            <StickerText
+                                text="I SIP COFFEE\nWHILST\nCURSOR CODES"
+                                font="'Fredoka One'"
+                                color="text-blue-500"
+                            />
+                        </Sticker>
+
+                        {/* Cyber Tech Sticker */}
+                        <Sticker
+                            background="bg-gradient-to-r from-green-400 to-blue-500"
+                            pattern="circuit-pattern"
+                            shape="rounded-lg">
+                            <StickerText
+                                text="CURSOR COOKS\nWHILE\nI CHILL"
+                                font="'Carter One'"
+                                color="text-white"
+                            />
+                        </Sticker>
+                    </div>
+                </div>
+            );
+        };
+
+        ReactDOM.render(<App />, document.getElementById('root'));
+    </script>
+</body>
+
+</html>
