@@ -1,24 +1,81 @@
-Context: These prompts are for generating sticker designs for an AI engineering conference. The stickers should be fun and playful, incorporating popular memes and inside jokes from the AI and developer tooling communities. Think "It's Training Time!", "Gradient Descent Into Madness", or "Will Debug for Tokens" - keeping the tech theme but with a humorous twist.
+Context: These prompts are for generating sticker designs for an AI engineering conference. Each sticker should be a unique combination of copy, style, and color palette while maintaining a cohesive tech-meets-fun theme.
 
-Sticker Copy Ideas (Final):
+Sticker Copy (Core Messages):
+1. "Vibe coding at enterprises"
+2. "Vibe code with Cursor at work"
+3. "Pair programming with my AI bestie"
+4. "I sip coffee whilst Cursor codes"
+5. "Cursor cooks while I chill"
 
-1. "Vibe code with Cursor at work"
-2. "Vibe coding at enterprises" 
-3. "Unlocking vibe coding at enterprise"
-4. "Go YOLO mode at work"
-5. "I sip coffee whilst Cursor codes"
-6. "Cursor cooks while I chill"
-7. "Pair programming with my AI bestie"
+Style Variations:
+1. Comic Book Hero
+- Bold, dynamic letters with starburst background
+- Primary colors (red, blue, yellow)
+- Speed lines and explosion outlines
+- Comic-style emphasis marks
 
-Style Prompts:
+2. Retro Tech
+- Chrome-like letterforms with gradient
+- Neon accents and grid backgrounds
+- Color palette: Electric blue, hot pink, chrome silver
+- Optional: scanlines or circuit board patterns
 
-"Create text in comic book action style with a starburst background. Letters should be bold and dynamic, with an explosion-like outline, drawn in bright primary colors. Add speed lines or motion marks radiating outward, similar to a 'POW!' or 'WHAM!' effect from vintage comics."
-"Design text in a flowing, 1970s psychedelic style. Letters should curve and flow into each other with a groovy rhythm. Use warm colors like orange and pink, with letterforms that seem to dance across the space. Add small flower elements as decorative touches."
-"Render text in a bubbly, cartoon pop style. Each letter should be rounded and inflated like a balloon, with a glossy highlight. Use bright, candy-like colors with a white outline and a subtle drop shadow for depth."
-"Create text in a retro diner aesthetic. Letters should be chunky and chrome-like, with a metallic gradient effect. Add a thin pinstripe outline and maybe small stars or sparkles for extra pop."
-"Design text as graffiti-inspired street art. Letters should have a wild, energetic style with overlapping elements and sharp angles. Include drips, arrows, or other urban art elements, using bold contrasting colors."
-"Make text in a kawaii cute style with soft, rounded edges. Add small decorative elements like hearts, stars, or flowers. Use pastel colors with white highlights and gentle shadows for a friendly, approachable feel."
-"Create text in an 80s Memphis style with geometric shapes in the background. Use bold patterns, squiggles, and dots. Colors should be bright and contrasting, with elements of black and white for punch."
-"Design text with a hand-drawn marker effect. Letters should look slightly irregular and organic, with visible texture in the fills. Add speech bubble outlines or thought bubble shapes around the text."
-"Render text in a neon sign style with electric colors. Add a glowing effect and maybe some flicker elements. Include a subtle outer halo in a contrasting color for that light-up feel."
-"Create text in a skater/surf style with warped, wavy baselines. Letters should feel like they're in motion, maybe with speed lines or wind effects. Use bold colors with black outlines and maybe some checkerboard elements for that classic skate aesthetic."
+3. Kawaii Tech
+- Soft, rounded letterforms
+- Pastel color scheme (mint, lavender, peach)
+- Decorative elements: cute robots, hearts, stars
+- Gentle shadows and highlights
+
+4. Synthwave
+- 80s-inspired geometric patterns
+- Sunset gradient background (purple to orange)
+- Chrome or neon text treatment
+- Optional: grid or wireframe elements
+
+5. Modern Minimal
+- Clean, sans-serif typography
+- Monochromatic color schemes
+- Subtle texture or pattern overlays
+- Minimal tech-inspired icons
+
+6. Bubble Text
+- Multi-layered text with offset shadows
+- Playful, bouncy letterforms
+- Bright color combinations
+- Optional: animated-style movement lines
+
+Design Requirements:
+- Each sticker should maintain readability at both large and small sizes
+- Include a subtle border or container shape
+- Incorporate at least one tech-related visual element
+- Maintain consistent sizing across all variations
+- Export as vector-ready format
+
+Color Palettes:
+1. Cyber Pop
+   - Primary: #FF00FF (Magenta)
+   - Secondary: #00FFFF (Cyan)
+   - Accent: #FFFF00 (Yellow)
+
+2. Forest Tech
+   - Primary: #2ECC71 (Emerald)
+   - Secondary: #3498DB (Blue)
+   - Accent: #F1C40F (Yellow)
+
+3. Night Mode
+   - Primary: #2C3E50 (Dark Blue)
+   - Secondary: #E74C3C (Red)
+   - Accent: #ECF0F1 (Light Gray)
+
+4. Pastel Tech
+   - Primary: #FFB6C1 (Light Pink)
+   - Secondary: #98FB98 (Pale Green)
+   - Accent: #87CEEB (Sky Blue)
+
+Instructions for Generation:
+1. Select one copy message
+2. Choose one style variation
+3. Apply one color palette
+4. Ensure consistent sizing and readability
+5. Add appropriate tech-themed decorative elements
+6. Generate vector-ready output
