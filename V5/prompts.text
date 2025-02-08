@@ -1,0 +1,170 @@
+Context: These prompts are for generating sticker designs for an AI engineering conference. Each sticker should be a unique combination of copy, style, and color palette while maintaining a cohesive tech-meets-fun theme.
+
+IMPORTANT NOTES:
+- The sticker copy/text below is FINAL and must NEVER be modified, reworded, or changed in any way. Only the visual styling should be iterated on.
+- Each sticker should have a unique combination of message, style, shape, and color palette.
+
+Sticker Copy (Core Messages):
+1. "Unlocking vibe coding at enterprises"
+2. "Vibe coding at enterprises"
+3. "Vibe code with Cursor at work"
+4. "Pair programming with my AI bestie"
+5. "I sip coffee whilst Cursor codes"
+6. "Cursor cooks while I chill"
+
+CRITICAL DESIGN REQUIREMENTS:
+1. Text Readability (HIGHEST PRIORITY):
+   - ALL text MUST have a contrasting outline (2-3px thick)
+   - White outline on dark backgrounds, dark outline on light backgrounds
+   - Minimum contrast ratio of 4.5:1 between text and background colors
+   - Font weights should be bold/chunky - avoid thin or light weights
+   - Black text must always have a light outline for readability
+   - No transparent or semi-transparent text allowed
+
+2. Alignment and Spacing:
+   - Text MUST be perfectly centered both horizontally and vertically
+   - Text must stay within shape boundaries with 24-32px padding
+   - For multi-line text, maintain equal vertical spacing between lines
+   - Maximum width/height ratio of 3:1 to prevent overly wide/tall designs
+
+Background Shape Variations (MUST USE DIFFERENT SHAPES):
+1. Geometric Shapes:
+   - Hexagon with rounded corners (8-12px radius)
+   - Octagon with sharp corners
+   - Diamond with slightly curved edges
+   - Shield or badge shape
+   - Parallelogram (15-degree slant)
+
+2. Organic Shapes:
+   - Asymmetric blob (4-6 curved segments)
+   - Cloud-like form with 3-5 bumps
+   - Wavy rectangle (amplitude 12-16px, 3-4 waves per side)
+   - Abstract tech-inspired shape
+   - Rounded triangle with bulging sides
+
+3. Dynamic Shapes:
+   - Speech bubble with angular pointer
+   - Geometric burst (8-12 points with varying lengths)
+   - Circuit board outline
+   - Data flow shape with nodes
+   - Star-burst with rounded points
+
+Style Variations:
+1. Comic Book Hero
+- Bold, dynamic letters with starburst background
+- Primary colors (red, blue, yellow)
+- Speed lines angled 15-30 degrees
+- Comic-style emphasis marks
+- Strong contrasting text outline (2-3px thick)
+- Recommended fonts: 'Permanent Marker', 'Carter One', 'Bungee Shade'
+
+2. Retro Tech
+- Chrome-like letterforms with 3-step gradient
+- Neon accents and 45-degree grid backgrounds
+- Color palette: Electric blue, hot pink, chrome silver
+- Scanlines (1px thick, 2px spacing)
+- Recommended fonts: 'VT323', 'Press Start 2P', 'Silkscreen'
+
+3. Kawaii Tech
+- Soft, rounded letterforms
+- Pastel color scheme (mint, lavender, peach)
+- Cute tech elements: robots, hearts, stars
+- Gentle shadows (30% opacity, 2-4px offset)
+- Recommended fonts: 'Fredoka One', 'Pacifico', 'Rubik Bubbles'
+
+4. Synthwave
+- 80s-inspired geometric patterns
+- Sunset gradient (purple to orange)
+- Chrome or neon text treatment
+- Grid elements at 45-degree angles
+- Recommended fonts: 'Righteous', 'Bungee Inline', 'VT323'
+
+5. Modern Edge
+- Bold, geometric sans-serif typography
+- High contrast duotone schemes
+- Tech patterns (circuits, nodes, data flows)
+- Sharp angles and asymmetric layouts
+- Recommended fonts: 'Righteous', 'Bungee Inline', 'Carter One'
+
+6. Bubble Text
+- Multi-layered text with offset shadows
+- Playful, bouncy letterforms
+- Bright color combinations
+- Movement lines (15-20% opacity)
+- Recommended fonts: 'Rubik Bubbles', 'Fredoka One', 'Carter One'
+
+Color Palettes (With Contrast Requirements):
+1. Cyber Pop
+   - Primary: #FF00FF (Magenta)
+   - Secondary: #00FFFF (Cyan)
+   - Accent: #FFFF00 (Yellow)
+   - Text Colors: White or Black with contrasting outline
+   - Gradient: Primary to Secondary, 45-degree angle
+
+2. Forest Tech
+   - Primary: #2ECC71 (Emerald)
+   - Secondary: #3498DB (Blue)
+   - Accent: #F1C40F (Yellow)
+   - Text Colors: White with dark outline
+   - Gradient: Primary to Secondary, 60-degree angle
+
+3. Night Mode
+   - Primary: #2C3E50 (Dark Blue)
+   - Secondary: #E74C3C (Red)
+   - Accent: #ECF0F1 (Light Gray)
+   - Text Colors: White with dark outline
+   - Gradient: Primary to Secondary, 30-degree angle
+
+4. Pastel Tech
+   - Primary: #FFB6C1 (Light Pink)
+   - Secondary: #98FB98 (Pale Green)
+   - Accent: #4A90E2 (Darker Blue)
+   - Text Colors: Dark with light outline
+   - Gradient: Primary to Secondary, 15-degree angle
+
+5. Neon Night
+   - Primary: #FF1493 (Deep Pink)
+   - Secondary: #7B68EE (Medium Slate Blue)
+   - Accent: #00FF7F (Spring Green)
+   - Text Colors: White with dark outline
+   - Gradient: Primary to Secondary, 45-degree angle
+
+Technical Requirements:
+- Minimum export size: 800x800px
+- Vector paths must be fully closed
+- No raster effects or bitmap patterns
+- Text must be converted to outlines
+- Maximum of 3 gradient stops per element
+- Minimum stroke width: 2px
+- Maximum stroke width: 4px
+
+20 Unique Sticker Combinations:
+1. Message 1 + Comic Hero + Hexagon + Cyber Pop
+2. Message 2 + Retro Tech + Circuit Board + Night Mode
+3. Message 3 + Kawaii Tech + Cloud Shape + Pastel Tech
+4. Message 4 + Synthwave + Diamond + Neon Night
+5. Message 5 + Modern Edge + Geometric Burst + Forest Tech
+6. Message 6 + Bubble Text + Speech Bubble + Cyber Pop
+7. Message 1 + Synthwave + Octagon + Night Mode
+8. Message 2 + Modern Edge + Wavy Rectangle + Pastel Tech
+9. Message 3 + Comic Hero + Star-burst + Neon Night
+10. Message 4 + Retro Tech + Shield + Forest Tech
+11. Message 5 + Kawaii Tech + Asymmetric Blob + Cyber Pop
+12. Message 6 + Bubble Text + Data Flow + Night Mode
+13. Message 1 + Modern Edge + Parallelogram + Pastel Tech
+14. Message 2 + Synthwave + Rounded Triangle + Neon Night
+15. Message 3 + Comic Hero + Circuit Board + Forest Tech
+16. Message 4 + Kawaii Tech + Geometric Burst + Cyber Pop
+17. Message 5 + Retro Tech + Cloud Shape + Night Mode
+18. Message 6 + Bubble Text + Hexagon + Pastel Tech
+19. Message 1 + Modern Edge + Speech Bubble + Neon Night
+20. Message 2 + Synthwave + Star-burst + Forest Tech
+
+Instructions for Generation:
+1. Use EXACTLY one of the provided copy messages - NO modifications to the text are allowed
+2. Follow the specific combination assigned in the list above
+3. Ensure consistent sizing and readability
+4. Add appropriate tech-themed decorative elements
+5. Generate vector-ready output
+6. Verify contrast ratios and text outline requirements
+7. Confirm shape matches the assigned variation 

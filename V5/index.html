@@ -1,0 +1,1023 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cursor Stickers V5</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Carter+One&family=Bungee+Shade&family=VT323&family=Press+Start+2P&family=Silkscreen&family=Fredoka+One&family=Pacifico&family=Rubik+Bubbles&family=Righteous&family=Bungee+Inline&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: #f0f2f5;
+            font-family: system-ui, -apple-system, sans-serif;
+            padding: 2rem;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 2rem;
+            color: #2C3E50;
+        }
+
+        .sticker-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            padding: 1rem;
+        }
+
+        .sticker-container {
+            background: white;
+            border-radius: 12px;
+            padding: 1rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .sticker-info {
+            margin-top: 1rem;
+            text-align: center;
+            font-size: 0.875rem;
+            color: #666;
+        }
+
+        .sticker {
+            width: 200px;
+            height: 200px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        /* SVG styles will be defined within each SVG */
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Cursor Stickers V5</h1>
+        <div class="sticker-grid">
+            <!-- Sticker 1: Message 1 + Comic Hero + Hexagon + Cyber Pop -->
+            <div class="sticker-container">
+                <div class="sticker">
+                    <svg width="200" height="200" viewBox="0 0 800 800">
+                        <defs>
+                            <linearGradient id="cyberGrad1" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" style="stop-color:#FF00FF" />
+                                <stop offset="100%" style="stop-color:#00FFFF" />
+                            </linearGradient>
+                            <!-- Hexagon path for clipping -->
+                            <clipPath id="hexClip1">
+                                <path d="M400 100 L700 250 L700 550 L400 700 L100 550 L100 250 Z" />
+                            </clipPath>
+                        </defs>
+
+                        <!-- Background hexagon -->
+                        <path d="M400 100 L700 250 L700 550 L400 700 L100 550 L100 250 Z" fill="url(#cyberGrad1)"
+                            stroke="#FFFF00" stroke-width="4" />
+
+                        <!-- Starburst lines -->
+                        <g clip-path="url(#hexClip1)" stroke="#FFFF00" stroke-width="2" opacity="0.3">
+                            <line x1="400" y1="400" x2="700" y2="100" />
+                            <line x1="400" y1="400" x2="700" y2="700" />
+                            <line x1="400" y1="400" x2="100" y2="700" />
+                            <line x1="400" y1="400" x2="100" y2="100" />
+                        </g>
+
+                        <!-- Text with outline -->
+                        <g transform="translate(400, 400)">
+                            <text x="0" y="0" font-family="Permanent Marker" font-size="48" fill="white" stroke="black"
+                                stroke-width="8" text-anchor="middle" dominant-baseline="middle">
+                                <tspan x="0" dy="-20">Unlocking vibe</tspan>
+                                <tspan x="0" dy="60">coding at</tspan>
+                                <tspan x="0" dy="60">enterprises</tspan>
+                            </text>
+                            <text x="0" y="0" font-family="Permanent Marker" font-size="48" fill="white"
+                                text-anchor="middle" dominant-baseline="middle">
+                                <tspan x="0" dy="-20">Unlocking vibe</tspan>
+                                <tspan x="0" dy="60">coding at</tspan>
+                                <tspan x="0" dy="60">enterprises</tspan>
+                            </text>
+                        </g>
+                    </svg>
+                </div>
+                <div class="sticker-info">
+                    <p>Comic Hero + Hexagon + Cyber Pop</p>
+                </div>
+            </div>
+
+            <!-- Sticker 2: Message 2 + Retro Tech + Circuit Board + Night Mode -->
+            <div class="sticker-container">
+                <div class="sticker">
+                    <svg width="200" height="200" viewBox="0 0 800 800">
+                        <defs>
+                            <linearGradient id="nightGrad2" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" style="stop-color:#2C3E50" />
+                                <stop offset="100%" style="stop-color:#E74C3C" />
+                            </linearGradient>
+                            <pattern id="circuitPattern" x="0" y="0" width="100" height="100"
+                                patternUnits="userSpaceOnUse">
+                                <path d="M10 10 H90 V90 H10 Z" fill="none" stroke="#ECF0F1" stroke-width="2"
+                                    opacity="0.2" />
+                                <circle cx="10" cy="10" r="3" fill="#ECF0F1" opacity="0.2" />
+                                <circle cx="90" cy="90" r="3" fill="#ECF0F1" opacity="0.2" />
+                                <line x1="10" y1="10" x2="90" y2="90" stroke="#ECF0F1" stroke-width="2" opacity="0.2" />
+                            </pattern>
+                        </defs>
+
+                        <!-- Circuit board background -->
+                        <path d="M100 200 Q400 100 700 200 Q800 400 700 600 Q400 700 100 600 Q0 400 100 200 Z"
+                            fill="url(#nightGrad2)" stroke="#ECF0F1" stroke-width="4" />
+
+                        <!-- Circuit pattern overlay -->
+                        <path d="M100 200 Q400 100 700 200 Q800 400 700 600 Q400 700 100 600 Q0 400 100 200 Z"
+                            fill="url(#circuitPattern)" />
+
+                        <!-- Text with chrome effect -->
+                        <g transform="translate(400, 400)">
+                            <text x="0" y="0" font-family="Press Start 2P" font-size="40" fill="white" stroke="#2C3E50"
+                                stroke-width="8" text-anchor="middle" dominant-baseline="middle">
+                                <tspan x="0" dy="-20">Vibe coding</tspan>
+                                <tspan x="0" dy="60">at enterprises</tspan>
+                            </text>
+                            <text x="0" y="0" font-family="Press Start 2P" font-size="40" fill="white"
+                                text-anchor="middle" dominant-baseline="middle">
+                                <tspan x="0" dy="-20">Vibe coding</tspan>
+                                <tspan x="0" dy="60">at enterprises</tspan>
+                            </text>
+                        </g>
+                    </svg>
+                </div>
+                <div class="sticker-info">
+                    <p>Retro Tech + Circuit Board + Night Mode</p>
+                </div>
+            </div>
+
+            <!-- Sticker 3: Message 3 + Kawaii Tech + Cloud Shape + Pastel Tech -->
+            <div class="sticker-container">
+                <div class="sticker">
+                    <svg width="200" height="200" viewBox="0 0 800 800">
+                        <defs>
+                            <linearGradient id="pastelGrad3" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" style="stop-color:#FFB6C1" />
+                                <stop offset="100%" style="stop-color:#98FB98" />
+                            </linearGradient>
+                        </defs>
+
+                        <!-- Cloud shape background -->
+                        <path d="M200 300 
+                                C200 250 300 200 400 200 
+                                C500 200 600 250 600 300
+                                C650 300 700 350 700 400
+                                C700 450 650 500 600 500
+                                C600 550 500 600 400 600
+                                C300 600 200 550 200 500
+                                C150 500 100 450 100 400
+                                C100 350 150 300 200 300Z" fill="url(#pastelGrad3)" stroke="#4A90E2"
+                            stroke-width="4" />
+
+                        <!-- Kawaii decorative elements -->
+                        <circle cx="250" cy="350" r="20" fill="#4A90E2" opacity="0.5" />
+                        <circle cx="550" cy="350" r="20" fill="#4A90E2" opacity="0.5" />
+                        <path d="M350 450 Q400 500 450 450" fill="none" stroke="#4A90E2" stroke-width="4" />
+
+                        <!-- Text with cute style -->
+                        <g transform="translate(400, 400)">
+                            <text x="0" y="0" font-family="Fredoka One" font-size="48" fill="#4A90E2" stroke="white"
+                                stroke-width="8" text-anchor="middle" dominant-baseline="middle">
+                                <tspan x="0" dy="-20">Vibe code with</tspan>
+                                <tspan x="0" dy="60">Cursor at work</tspan>
+                            </text>
+                            <text x="0" y="0" font-family="Fredoka One" font-size="48" fill="#4A90E2"
+                                text-anchor="middle" dominant-baseline="middle">
+                                <tspan x="0" dy="-20">Vibe code with</tspan>
+                                <tspan x="0" dy="60">Cursor at work</tspan>
+                            </text>
+                        </g>
+                    </svg>
+                </div>
+                <div class="sticker-info">
+                    <p>Kawaii Tech + Cloud Shape + Pastel Tech</p>
+                </div>
+            </div>
+
+            <!-- Sticker 4: Message 4 + Synthwave + Diamond + Neon Night -->
+            <div class="sticker-container">
+                <div class="sticker">
+                    <svg width="200" height="200" viewBox="0 0 800 800">
+                        <defs>
+                            <linearGradient id="neonGrad4" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" style="stop-color:#FF1493" />
+                                <stop offset="100%" style="stop-color:#7B68EE" />
+                            </linearGradient>
+                            <pattern id="grid4" x="0" y="0" width="50" height="50" patternUnits="userSpaceOnUse">
+                                <line x1="0" y1="0" x2="50" y2="50" stroke="#00FF7F" stroke-width="1" opacity="0.2" />
+                                <line x1="50" y1="0" x2="0" y2="50" stroke="#00FF7F" stroke-width="1" opacity="0.2" />
+                            </pattern>
+                        </defs>
+
+                        <!-- Diamond background -->
+                        <path d="M400 100 L700 400 L400 700 L100 400 Z" fill="url(#neonGrad4)" stroke="#00FF7F"
+                            stroke-width="4" />
+
+                        <!-- Grid overlay -->
+                        <path d="M400 100 L700 400 L400 700 L100 400 Z" fill="url(#grid4)" />
+
+                        <!-- Text with chrome effect -->
+                        <g transform="translate(400, 400)">
+                            <text x="0" y="0" font-family="Righteous" font-size="44" fill="white" stroke="#FF1493"
+                                stroke-width="8" text-anchor="middle" dominant-baseline="middle">
+                                <tspan x="0" dy="-20">Pair programming</tspan>
+                                <tspan x="0" dy="60">with my AI bestie</tspan>
+                            </text>
+                            <text x="0" y="0" font-family="Righteous" font-size="44" fill="white" text-anchor="middle"
+                                dominant-baseline="middle">
+                                <tspan x="0" dy="-20">Pair programming</tspan>
+                                <tspan x="0" dy="60">with my AI bestie</tspan>
+                            </text>
+                        </g>
+                    </svg>
+                </div>
+                <div class="sticker-info">
+                    <p>Synthwave + Diamond + Neon Night</p>
+                </div>
+            </div>
+
+            <!-- Sticker 5: Message 5 + Modern Edge + Geometric Burst + Forest Tech -->
+            <div class="sticker-container">
+                <div class="sticker">
+                    <svg width="200" height="200" viewBox="0 0 800 800">
+                        <defs>
+                            <linearGradient id="forestGrad5" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" style="stop-color:#2ECC71" />
+                                <stop offset="100%" style="stop-color:#3498DB" />
+                            </linearGradient>
+                        </defs>
+
+                        <!-- Geometric burst background -->
+                        <g transform="translate(400, 400)">
+                            <path d="M0 -300 L50 -50 L300 0 L50 50 L0 300 L-50 50 L-300 0 L-50 -50 Z"
+                                fill="url(#forestGrad5)" stroke="#F1C40F" stroke-width="4" />
+                        </g>
+
+                        <!-- Tech pattern overlay -->
+                        <g transform="translate(400, 400)" stroke="#F1C40F" stroke-width="2" opacity="0.2">
+                            <circle r="100" fill="none" />
+                            <circle r="150" fill="none" />
+                            <circle r="200" fill="none" />
+                        </g>
+
+                        <!-- Text with modern style -->
+                        <g transform="translate(400, 400)">
+                            <text x="0" y="0" font-family="Bungee Inline" font-size="44" fill="white" stroke="#2ECC71"
+                                stroke-width="8" text-anchor="middle" dominant-baseline="middle">
+                                <tspan x="0" dy="-20">I sip coffee whilst</tspan>
+                                <tspan x="0" dy="60">Cursor codes</tspan>
+                            </text>
+                            <text x="0" y="0" font-family="Bungee Inline" font-size="44" fill="white"
+                                text-anchor="middle" dominant-baseline="middle">
+                                <tspan x="0" dy="-20">I sip coffee whilst</tspan>
+                                <tspan x="0" dy="60">Cursor codes</tspan>
+                            </text>
+                        </g>
+                    </svg>
+                </div>
+                <div class="sticker-info">
+                    <p>Modern Edge + Geometric Burst + Forest Tech</p>
+                </div>
+            </div>
+
+            <!-- Sticker 6: Message 6 + Bubble Text + Speech Bubble + Cyber Pop -->
+            <div class="sticker-container">
+                <div class="sticker">
+                    <svg width="200" height="200" viewBox="0 0 800 800">
+                        <defs>
+                            <linearGradient id="cyberGrad6" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" style="stop-color:#FF00FF" />
+                                <stop offset="100%" style="stop-color:#00FFFF" />
+                            </linearGradient>
+                        </defs>
+
+                        <!-- Speech bubble background -->
+                        <path d="M100 200 
+                              Q100 100 300 100 
+                              L500 100 
+                              Q700 100 700 200
+                              L700 400
+                              Q700 500 600 500
+                              L400 500
+                              L300 600
+                              L350 500
+                              L200 500
+                              Q100 500 100 400 Z" fill="url(#cyberGrad6)" stroke="#FFFF00" stroke-width="4" />
+
+                        <!-- Bubble decorations -->
+                        <circle cx="200" cy="300" r="20" fill="#FFFF00" opacity="0.3" />
+                        <circle cx="600" cy="300" r="20" fill="#FFFF00" opacity="0.3" />
+                        <circle cx="400" cy="200" r="15" fill="#FFFF00" opacity="0.3" />
+
+                        <!-- Text with bubble style -->
+                        <g transform="translate(400, 300)">
+                            <text x="0" y="0" font-family="Rubik Bubbles" font-size="48" fill="white" stroke="black"
+                                stroke-width="8" text-anchor="middle" dominant-baseline="middle">
+                                <tspan x="0" dy="-20">Cursor cooks</tspan>
+                                <tspan x="0" dy="60">while I chill</tspan>
+                            </text>
+                            <text x="0" y="0" font-family="Rubik Bubbles" font-size="48" fill="white"
+                                text-anchor="middle" dominant-baseline="middle">
+                                <tspan x="0" dy="-20">Cursor cooks</tspan>
+                                <tspan x="0" dy="60">while I chill</tspan>
+                            </text>
+                        </g>
+                    </svg>
+                </div>
+                <div class="sticker-info">
+                    <p>Bubble Text + Speech Bubble + Cyber Pop</p>
+                </div>
+            </div>
+
+            <!-- Sticker 7: Message 1 + Synthwave + Octagon + Night Mode -->
+            <div class="sticker-container">
+                <div class="sticker">
+                    <svg width="200" height="200" viewBox="0 0 800 800">
+                        <defs>
+                            <linearGradient id="nightGrad7" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" style="stop-color:#2C3E50" />
+                                <stop offset="100%" style="stop-color:#E74C3C" />
+                            </linearGradient>
+                            <pattern id="grid7" x="0" y="0" width="40" height="40" patternUnits="userSpaceOnUse">
+                                <path d="M0 0 H40 M0 40 H40 M0 0 V40 M40 0 V40" stroke="#ECF0F1" stroke-width="1"
+                                    opacity="0.2" />
+                            </pattern>
+                        </defs>
+
+                        <!-- Octagon background -->
+                        <path d="M400 100 L600 200 L700 400 L600 600 L400 700 L200 600 L100 400 L200 200 Z"
+                            fill="url(#nightGrad7)" stroke="#ECF0F1" stroke-width="4" />
+
+                        <!-- Grid overlay -->
+                        <path d="M400 100 L600 200 L700 400 L600 600 L400 700 L200 600 L100 400 L200 200 Z"
+                            fill="url(#grid7)" />
+
+                        <!-- Text with synthwave style -->
+                        <g transform="translate(400, 400)">
+                            <text x="0" y="0" font-family="VT323" font-size="44" fill="white" stroke="#2C3E50"
+                                stroke-width="8" text-anchor="middle" dominant-baseline="middle">
+                                <tspan x="0" dy="-40">Unlocking vibe</tspan>
+                                <tspan x="0" dy="40">coding at</tspan>
+                                <tspan x="0" dy="40">enterprises</tspan>
+                            </text>
+                            <text x="0" y="0" font-family="VT323" font-size="44" fill="white" text-anchor="middle"
+                                dominant-baseline="middle">
+                                <tspan x="0" dy="-40">Unlocking vibe</tspan>
+                                <tspan x="0" dy="40">coding at</tspan>
+                                <tspan x="0" dy="40">enterprises</tspan>
+                            </text>
+                        </g>
+                    </svg>
+                </div>
+                <div class="sticker-info">
+                    <p>Synthwave + Octagon + Night Mode</p>
+                </div>
+            </div>
+
+            <!-- Sticker 8: Message 2 + Modern Edge + Wavy Rectangle + Pastel Tech -->
+            <div class="sticker-container">
+                <div class="sticker">
+                    <svg width="200" height="200" viewBox="0 0 800 800">
+                        <defs>
+                            <linearGradient id="pastelGrad8" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" style="stop-color:#FFB6C1" />
+                                <stop offset="100%" style="stop-color:#98FB98" />
+                            </linearGradient>
+                        </defs>
+
+                        <!-- Wavy rectangle background -->
+                        <path d="M200 200 
+                              C250 180 350 220 400 200
+                              C450 180 550 220 600 200
+                              L600 600
+                              C550 580 450 620 400 600
+                              C350 580 250 620 200 600 Z" fill="url(#pastelGrad8)" stroke="#4A90E2" stroke-width="4" />
+
+                        <!-- Modern tech pattern -->
+                        <g stroke="#4A90E2" stroke-width="2" opacity="0.2">
+                            <line x1="250" y1="300" x2="550" y2="300" />
+                            <line x1="250" y1="400" x2="550" y2="400" />
+                            <line x1="250" y1="500" x2="550" y2="500" />
+                        </g>
+
+                        <!-- Text with modern edge style -->
+                        <g transform="translate(400, 400)">
+                            <text x="0" y="0" font-family="Righteous" font-size="48" fill="#4A90E2" stroke="white"
+                                stroke-width="8" text-anchor="middle" dominant-baseline="middle">
+                                <tspan x="0" dy="-20">Vibe coding</tspan>
+                                <tspan x="0" dy="60">at enterprises</tspan>
+                            </text>
+                            <text x="0" y="0" font-family="Righteous" font-size="48" fill="#4A90E2" text-anchor="middle"
+                                dominant-baseline="middle">
+                                <tspan x="0" dy="-20">Vibe coding</tspan>
+                                <tspan x="0" dy="60">at enterprises</tspan>
+                            </text>
+                        </g>
+                    </svg>
+                </div>
+                <div class="sticker-info">
+                    <p>Modern Edge + Wavy Rectangle + Pastel Tech</p>
+                </div>
+            </div>
+
+            <!-- Sticker 9: Message 3 + Comic Hero + Star-burst + Neon Night -->
+            <div class="sticker-container">
+                <div class="sticker">
+                    <svg width="200" height="200" viewBox="0 0 800 800">
+                        <defs>
+                            <linearGradient id="neonGrad9" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" style="stop-color:#FF1493" />
+                                <stop offset="100%" style="stop-color:#7B68EE" />
+                            </linearGradient>
+                        </defs>
+
+                        <!-- Star-burst background -->
+                        <g transform="translate(400, 400)">
+                            <path d="M0 -300 L100 -100 L300 0 L100 100 L0 300 L-100 100 L-300 0 L-100 -100 Z
+                                   M0 -200 L50 -50 L200 0 L50 50 L0 200 L-50 50 L-200 0 L-50 -50 Z"
+                                fill="url(#neonGrad9)" stroke="#00FF7F" stroke-width="4" />
+                        </g>
+
+                        <!-- Comic style effects -->
+                        <g transform="translate(400, 400)" stroke="#00FF7F" stroke-width="2" opacity="0.3">
+                            <line x1="-200" y1="-200" x2="200" y2="200" />
+                            <line x1="200" y1="-200" x2="-200" y2="200" />
+                        </g>
+
+                        <!-- Text with comic style -->
+                        <g transform="translate(400, 400)">
+                            <text x="0" y="0" font-family="Carter One" font-size="48" fill="white" stroke="#FF1493"
+                                stroke-width="8" text-anchor="middle" dominant-baseline="middle">
+                                <tspan x="0" dy="-20">Vibe code with</tspan>
+                                <tspan x="0" dy="60">Cursor at work</tspan>
+                            </text>
+                            <text x="0" y="0" font-family="Carter One" font-size="48" fill="white" text-anchor="middle"
+                                dominant-baseline="middle">
+                                <tspan x="0" dy="-20">Vibe code with</tspan>
+                                <tspan x="0" dy="60">Cursor at work</tspan>
+                            </text>
+                        </g>
+                    </svg>
+                </div>
+                <div class="sticker-info">
+                    <p>Comic Hero + Star-burst + Neon Night</p>
+                </div>
+            </div>
+
+            <!-- Sticker 10: Message 4 + Retro Tech + Shield + Forest Tech -->
+            <div class="sticker-container">
+                <div class="sticker">
+                    <svg width="200" height="200" viewBox="0 0 800 800">
+                        <defs>
+                            <linearGradient id="forestGrad10" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" style="stop-color:#2ECC71" />
+                                <stop offset="100%" style="stop-color:#3498DB" />
+                            </linearGradient>
+                            <pattern id="retroGrid10" x="0" y="0" width="40" height="40" patternUnits="userSpaceOnUse">
+                                <rect width="40" height="40" fill="none" stroke="#F1C40F" stroke-width="1"
+                                    opacity="0.2" />
+                                <line x1="0" y1="20" x2="40" y2="20" stroke="#F1C40F" stroke-width="1" opacity="0.2" />
+                                <line x1="20" y1="0" x2="20" y2="40" stroke="#F1C40F" stroke-width="1" opacity="0.2" />
+                            </pattern>
+                        </defs>
+
+                        <!-- Shield background -->
+                        <path d="M400 100 
+                              C600 100 700 200 700 400
+                              C700 600 400 700 400 700
+                              C400 700 100 600 100 400
+                              C100 200 200 100 400 100 Z" fill="url(#forestGrad10)" stroke="#F1C40F"
+                            stroke-width="4" />
+
+                        <!-- Retro grid overlay -->
+                        <path d="M400 100 
+                              C600 100 700 200 700 400
+                              C700 600 400 700 400 700
+                              C400 700 100 600 100 400
+                              C100 200 200 100 400 100 Z" fill="url(#retroGrid10)" />
+
+                        <!-- Text with retro style -->
+                        <g transform="translate(400, 400)">
+                            <text x="0" y="0" font-family="Press Start 2P" font-size="36" fill="white" stroke="#2ECC71"
+                                stroke-width="8" text-anchor="middle" dominant-baseline="middle">
+                                <tspan x="0" dy="-20">Pair programming</tspan>
+                                <tspan x="0" dy="60">with my AI bestie</tspan>
+                            </text>
+                            <text x="0" y="0" font-family="Press Start 2P" font-size="36" fill="white"
+                                text-anchor="middle" dominant-baseline="middle">
+                                <tspan x="0" dy="-20">Pair programming</tspan>
+                                <tspan x="0" dy="60">with my AI bestie</tspan>
+                            </text>
+                        </g>
+                    </svg>
+                </div>
+                <div class="sticker-info">
+                    <p>Retro Tech + Shield + Forest Tech</p>
+                </div>
+            </div>
+
+            <!-- Sticker 11: Message 5 + Kawaii Tech + Asymmetric Blob + Cyber Pop -->
+            <div class="sticker-container">
+                <div class="sticker">
+                    <svg width="200" height="200" viewBox="0 0 800 800">
+                        <defs>
+                            <linearGradient id="cyberGrad11" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" style="stop-color:#FF00FF" />
+                                <stop offset="100%" style="stop-color:#00FFFF" />
+                            </linearGradient>
+                        </defs>
+
+                        <!-- Asymmetric blob background -->
+                        <path d="M400 100 
+                              C500 100 600 200 650 300
+                              C700 400 650 500 600 600
+                              C500 700 300 700 200 600
+                              C100 500 150 400 100 300
+                              C150 200 300 100 400 100 Z" fill="url(#cyberGrad11)" stroke="#FFFF00" stroke-width="4" />
+
+                        <!-- Kawaii decorations -->
+                        <circle cx="300" cy="300" r="20" fill="#FFFF00" opacity="0.3" />
+                        <circle cx="500" cy="300" r="20" fill="#FFFF00" opacity="0.3" />
+                        <path d="M350 400 Q400 450 450 400" fill="none" stroke="#FFFF00" stroke-width="4" />
+
+                        <!-- Text with kawaii style -->
+                        <g transform="translate(400, 400)">
+                            <text x="0" y="0" font-family="Fredoka One" font-size="44" fill="white" stroke="#FF00FF"
+                                stroke-width="8" text-anchor="middle" dominant-baseline="middle">
+                                <tspan x="0" dy="-20">I sip coffee whilst</tspan>
+                                <tspan x="0" dy="60">Cursor codes</tspan>
+                            </text>
+                            <text x="0" y="0" font-family="Fredoka One" font-size="44" fill="white" text-anchor="middle"
+                                dominant-baseline="middle">
+                                <tspan x="0" dy="-20">I sip coffee whilst</tspan>
+                                <tspan x="0" dy="60">Cursor codes</tspan>
+                            </text>
+                        </g>
+                    </svg>
+                </div>
+                <div class="sticker-info">
+                    <p>Kawaii Tech + Asymmetric Blob + Cyber Pop</p>
+                </div>
+            </div>
+
+            <!-- Sticker 12: Message 6 + Bubble Text + Data Flow + Night Mode -->
+            <div class="sticker-container">
+                <div class="sticker">
+                    <svg width="200" height="200" viewBox="0 0 800 800">
+                        <defs>
+                            <linearGradient id="nightGrad12" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" style="stop-color:#2C3E50" />
+                                <stop offset="100%" style="stop-color:#E74C3C" />
+                            </linearGradient>
+                        </defs>
+
+                        <!-- Data flow shape -->
+                        <path d="M200 200 
+                              L600 200 
+                              C650 300 600 400 650 500
+                              L600 600 
+                              L200 600
+                              C150 500 200 400 150 300 Z" fill="url(#nightGrad12)" stroke="#ECF0F1" stroke-width="4" />
+
+                        <!-- Flow lines -->
+                        <g stroke="#ECF0F1" stroke-width="2" opacity="0.3">
+                            <path d="M250 300 C350 300 450 350 550 350" />
+                            <path d="M250 400 C350 400 450 450 550 450" />
+                            <circle cx="250" cy="300" r="5" fill="#ECF0F1" />
+                            <circle cx="550" cy="350" r="5" fill="#ECF0F1" />
+                            <circle cx="250" cy="400" r="5" fill="#ECF0F1" />
+                            <circle cx="550" cy="450" r="5" fill="#ECF0F1" />
+                        </g>
+
+                        <!-- Text with bubble style -->
+                        <g transform="translate(400, 400)">
+                            <text x="0" y="0" font-family="Rubik Bubbles" font-size="48" fill="white" stroke="#2C3E50"
+                                stroke-width="8" text-anchor="middle" dominant-baseline="middle">
+                                <tspan x="0" dy="-20">Cursor cooks</tspan>
+                                <tspan x="0" dy="60">while I chill</tspan>
+                            </text>
+                            <text x="0" y="0" font-family="Rubik Bubbles" font-size="48" fill="white"
+                                text-anchor="middle" dominant-baseline="middle">
+                                <tspan x="0" dy="-20">Cursor cooks</tspan>
+                                <tspan x="0" dy="60">while I chill</tspan>
+                            </text>
+                        </g>
+                    </svg>
+                </div>
+                <div class="sticker-info">
+                    <p>Bubble Text + Data Flow + Night Mode</p>
+                </div>
+            </div>
+
+            <!-- Sticker 13: Message 1 + Modern Edge + Parallelogram + Pastel Tech -->
+            <div class="sticker-container">
+                <div class="sticker">
+                    <svg width="200" height="200" viewBox="0 0 800 800">
+                        <defs>
+                            <linearGradient id="pastelGrad13" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" style="stop-color:#FFB6C1" />
+                                <stop offset="100%" style="stop-color:#98FB98" />
+                            </linearGradient>
+                        </defs>
+
+                        <!-- Parallelogram background -->
+                        <path d="M200 200 
+                              L600 100
+                              L700 600
+                              L300 700 Z" fill="url(#pastelGrad13)" stroke="#4A90E2" stroke-width="4" />
+
+                        <!-- Modern tech pattern -->
+                        <g stroke="#4A90E2" stroke-width="2" opacity="0.2">
+                            <line x1="300" y1="200" x2="600" y2="200" />
+                            <line x1="250" y1="400" x2="550" y2="400" />
+                            <line x1="200" y1="600" x2="500" y2="600" />
+                        </g>
+
+                        <!-- Text with modern edge style -->
+                        <g transform="translate(400, 400)">
+                            <text x="0" y="0" font-family="Righteous" font-size="44" fill="#4A90E2" stroke="white"
+                                stroke-width="8" text-anchor="middle" dominant-baseline="middle">
+                                <tspan x="0" dy="-40">Unlocking vibe</tspan>
+                                <tspan x="0" dy="40">coding at</tspan>
+                                <tspan x="0" dy="40">enterprises</tspan>
+                            </text>
+                            <text x="0" y="0" font-family="Righteous" font-size="44" fill="#4A90E2" text-anchor="middle"
+                                dominant-baseline="middle">
+                                <tspan x="0" dy="-40">Unlocking vibe</tspan>
+                                <tspan x="0" dy="40">coding at</tspan>
+                                <tspan x="0" dy="40">enterprises</tspan>
+                            </text>
+                        </g>
+                    </svg>
+                </div>
+                <div class="sticker-info">
+                    <p>Modern Edge + Parallelogram + Pastel Tech</p>
+                </div>
+            </div>
+
+            <!-- Sticker 14: Message 2 + Synthwave + Rounded Triangle + Neon Night -->
+            <div class="sticker-container">
+                <div class="sticker">
+                    <svg width="200" height="200" viewBox="0 0 800 800">
+                        <defs>
+                            <linearGradient id="neonGrad14" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" style="stop-color:#FF1493" />
+                                <stop offset="100%" style="stop-color:#7B68EE" />
+                            </linearGradient>
+                            <pattern id="grid14" x="0" y="0" width="40" height="40" patternUnits="userSpaceOnUse">
+                                <path d="M0 40 L40 0" stroke="#00FF7F" stroke-width="1" opacity="0.2" />
+                            </pattern>
+                        </defs>
+
+                        <!-- Rounded triangle background -->
+                        <path d="M400 100 
+                              Q600 200 700 400
+                              Q600 600 400 700
+                              Q200 600 100 400
+                              Q200 200 400 100 Z" fill="url(#neonGrad14)" stroke="#00FF7F" stroke-width="4" />
+
+                        <!-- Grid overlay -->
+                        <path d="M400 100 
+                              Q600 200 700 400
+                              Q600 600 400 700
+                              Q200 600 100 400
+                              Q200 200 400 100 Z" fill="url(#grid14)" />
+
+                        <!-- Text with synthwave style -->
+                        <g transform="translate(400, 400)">
+                            <text x="0" y="0" font-family="VT323" font-size="48" fill="white" stroke="#FF1493"
+                                stroke-width="8" text-anchor="middle" dominant-baseline="middle">
+                                <tspan x="0" dy="-20">Vibe coding</tspan>
+                                <tspan x="0" dy="60">at enterprises</tspan>
+                            </text>
+                            <text x="0" y="0" font-family="VT323" font-size="48" fill="white" text-anchor="middle"
+                                dominant-baseline="middle">
+                                <tspan x="0" dy="-20">Vibe coding</tspan>
+                                <tspan x="0" dy="60">at enterprises</tspan>
+                            </text>
+                        </g>
+                    </svg>
+                </div>
+                <div class="sticker-info">
+                    <p>Synthwave + Rounded Triangle + Neon Night</p>
+                </div>
+            </div>
+
+            <!-- Sticker 15: Message 3 + Comic Hero + Circuit Board + Forest Tech -->
+            <div class="sticker-container">
+                <div class="sticker">
+                    <svg width="200" height="200" viewBox="0 0 800 800">
+                        <defs>
+                            <linearGradient id="forestGrad15" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" style="stop-color:#2ECC71" />
+                                <stop offset="100%" style="stop-color:#3498DB" />
+                            </linearGradient>
+                            <pattern id="circuitPattern15" x="0" y="0" width="100" height="100"
+                                patternUnits="userSpaceOnUse">
+                                <path d="M10 10 H90 M50 10 V90" stroke="#F1C40F" stroke-width="2" opacity="0.2" />
+                                <circle cx="10" cy="10" r="5" fill="#F1C40F" opacity="0.2" />
+                                <circle cx="90" cy="10" r="5" fill="#F1C40F" opacity="0.2" />
+                                <circle cx="50" cy="90" r="5" fill="#F1C40F" opacity="0.2" />
+                            </pattern>
+                        </defs>
+
+                        <!-- Circuit board shape -->
+                        <path d="M200 200 
+                              L600 200 
+                              Q700 400 600 600
+                              L200 600
+                              Q100 400 200 200 Z" fill="url(#forestGrad15)" stroke="#F1C40F" stroke-width="4" />
+
+                        <!-- Circuit overlay -->
+                        <path d="M200 200 
+                              L600 200 
+                              Q700 400 600 600
+                              L200 600
+                              Q100 400 200 200 Z" fill="url(#circuitPattern15)" />
+
+                        <!-- Comic style text -->
+                        <g transform="translate(400, 400)">
+                            <text x="0" y="0" font-family="Carter One" font-size="48" fill="white" stroke="#2ECC71"
+                                stroke-width="8" text-anchor="middle" dominant-baseline="middle">
+                                <tspan x="0" dy="-20">Vibe code with</tspan>
+                                <tspan x="0" dy="60">Cursor at work</tspan>
+                            </text>
+                            <text x="0" y="0" font-family="Carter One" font-size="48" fill="white" text-anchor="middle"
+                                dominant-baseline="middle">
+                                <tspan x="0" dy="-20">Vibe code with</tspan>
+                                <tspan x="0" dy="60">Cursor at work</tspan>
+                            </text>
+                        </g>
+                    </svg>
+                </div>
+                <div class="sticker-info">
+                    <p>Comic Hero + Circuit Board + Forest Tech</p>
+                </div>
+            </div>
+
+            <!-- Sticker 16: Message 4 + Kawaii Tech + Geometric Burst + Cyber Pop -->
+            <div class="sticker-container">
+                <div class="sticker">
+                    <svg width="200" height="200" viewBox="0 0 800 800">
+                        <defs>
+                            <linearGradient id="cyberGrad16" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" style="stop-color:#FF00FF" />
+                                <stop offset="100%" style="stop-color:#00FFFF" />
+                            </linearGradient>
+                        </defs>
+
+                        <!-- Geometric burst background -->
+                        <g transform="translate(400, 400)">
+                            <path d="M0 -300 L50 -50 L300 0 L50 50 L0 300 L-50 50 L-300 0 L-50 -50 Z"
+                                fill="url(#cyberGrad16)" stroke="#FFFF00" stroke-width="4" />
+                        </g>
+
+                        <!-- Kawaii decorations -->
+                        <g transform="translate(400, 400)">
+                            <circle cx="-100" cy="-100" r="20" fill="#FFFF00" opacity="0.3" />
+                            <circle cx="100" cy="-100" r="20" fill="#FFFF00" opacity="0.3" />
+                            <path d="M-50 50 Q0 100 50 50" fill="none" stroke="#FFFF00" stroke-width="4" />
+                        </g>
+
+                        <!-- Text with kawaii style -->
+                        <g transform="translate(400, 400)">
+                            <text x="0" y="0" font-family="Fredoka One" font-size="44" fill="white" stroke="#FF00FF"
+                                stroke-width="8" text-anchor="middle" dominant-baseline="middle">
+                                <tspan x="0" dy="-20">Pair programming</tspan>
+                                <tspan x="0" dy="60">with my AI bestie</tspan>
+                            </text>
+                            <text x="0" y="0" font-family="Fredoka One" font-size="44" fill="white" text-anchor="middle"
+                                dominant-baseline="middle">
+                                <tspan x="0" dy="-20">Pair programming</tspan>
+                                <tspan x="0" dy="60">with my AI bestie</tspan>
+                            </text>
+                        </g>
+                    </svg>
+                </div>
+                <div class="sticker-info">
+                    <p>Kawaii Tech + Geometric Burst + Cyber Pop</p>
+                </div>
+            </div>
+
+            <!-- Sticker 17: Message 5 + Retro Tech + Cloud Shape + Night Mode -->
+            <div class="sticker-container">
+                <div class="sticker">
+                    <svg width="200" height="200" viewBox="0 0 800 800">
+                        <defs>
+                            <linearGradient id="nightGrad17" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" style="stop-color:#2C3E50" />
+                                <stop offset="100%" style="stop-color:#E74C3C" />
+                            </linearGradient>
+                            <pattern id="retroGrid17" x="0" y="0" width="30" height="30" patternUnits="userSpaceOnUse">
+                                <rect width="30" height="30" fill="none" stroke="#ECF0F1" stroke-width="1"
+                                    opacity="0.2" />
+                            </pattern>
+                        </defs>
+
+                        <!-- Cloud shape background -->
+                        <path d="M200 300 
+                              C200 250 300 200 400 200 
+                              C500 200 600 250 600 300
+                              C650 300 700 350 700 400
+                              C700 450 650 500 600 500
+                              C600 550 500 600 400 600
+                              C300 600 200 550 200 500
+                              C150 500 100 450 100 400
+                              C100 350 150 300 200 300Z" fill="url(#nightGrad17)" stroke="#ECF0F1" stroke-width="4" />
+
+                        <!-- Retro grid overlay -->
+                        <path d="M200 300 
+                              C200 250 300 200 400 200 
+                              C500 200 600 250 600 300
+                              C650 300 700 350 700 400
+                              C700 450 650 500 600 500
+                              C600 550 500 600 400 600
+                              C300 600 200 550 200 500
+                              C150 500 100 450 100 400
+                              C100 350 150 300 200 300Z" fill="url(#retroGrid17)" />
+
+                        <!-- Text with retro style -->
+                        <g transform="translate(400, 400)">
+                            <text x="0" y="0" font-family="Press Start 2P" font-size="36" fill="white" stroke="#2C3E50"
+                                stroke-width="8" text-anchor="middle" dominant-baseline="middle">
+                                <tspan x="0" dy="-20">I sip coffee whilst</tspan>
+                                <tspan x="0" dy="60">Cursor codes</tspan>
+                            </text>
+                            <text x="0" y="0" font-family="Press Start 2P" font-size="36" fill="white"
+                                text-anchor="middle" dominant-baseline="middle">
+                                <tspan x="0" dy="-20">I sip coffee whilst</tspan>
+                                <tspan x="0" dy="60">Cursor codes</tspan>
+                            </text>
+                        </g>
+                    </svg>
+                </div>
+                <div class="sticker-info">
+                    <p>Retro Tech + Cloud Shape + Night Mode</p>
+                </div>
+            </div>
+
+            <!-- Sticker 18: Message 6 + Bubble Text + Hexagon + Pastel Tech -->
+            <div class="sticker-container">
+                <div class="sticker">
+                    <svg width="200" height="200" viewBox="0 0 800 800">
+                        <defs>
+                            <linearGradient id="pastelGrad18" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" style="stop-color:#FFB6C1" />
+                                <stop offset="100%" style="stop-color:#98FB98" />
+                            </linearGradient>
+                        </defs>
+
+                        <!-- Hexagon background -->
+                        <path d="M400 100 L700 250 L700 550 L400 700 L100 550 L100 250 Z" fill="url(#pastelGrad18)"
+                            stroke="#4A90E2" stroke-width="4" />
+
+                        <!-- Bubble decorations -->
+                        <circle cx="300" cy="300" r="20" fill="#4A90E2" opacity="0.3" />
+                        <circle cx="500" cy="300" r="20" fill="#4A90E2" opacity="0.3" />
+                        <circle cx="400" cy="500" r="20" fill="#4A90E2" opacity="0.3" />
+
+                        <!-- Text with bubble style -->
+                        <g transform="translate(400, 400)">
+                            <text x="0" y="0" font-family="Rubik Bubbles" font-size="48" fill="#4A90E2" stroke="white"
+                                stroke-width="8" text-anchor="middle" dominant-baseline="middle">
+                                <tspan x="0" dy="-20">Cursor cooks</tspan>
+                                <tspan x="0" dy="60">while I chill</tspan>
+                            </text>
+                            <text x="0" y="0" font-family="Rubik Bubbles" font-size="48" fill="#4A90E2"
+                                text-anchor="middle" dominant-baseline="middle">
+                                <tspan x="0" dy="-20">Cursor cooks</tspan>
+                                <tspan x="0" dy="60">while I chill</tspan>
+                            </text>
+                        </g>
+                    </svg>
+                </div>
+                <div class="sticker-info">
+                    <p>Bubble Text + Hexagon + Pastel Tech</p>
+                </div>
+            </div>
+
+            <!-- Sticker 19: Message 1 + Modern Edge + Speech Bubble + Neon Night -->
+            <div class="sticker-container">
+                <div class="sticker">
+                    <svg width="200" height="200" viewBox="0 0 800 800">
+                        <defs>
+                            <linearGradient id="neonGrad19" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" style="stop-color:#FF1493" />
+                                <stop offset="100%" style="stop-color:#7B68EE" />
+                            </linearGradient>
+                        </defs>
+
+                        <!-- Speech bubble background -->
+                        <path d="M100 200 
+                              Q100 100 300 100 
+                              L500 100 
+                              Q700 100 700 200
+                              L700 400
+                              Q700 500 600 500
+                              L400 500
+                              L300 600
+                              L350 500
+                              L200 500
+                              Q100 500 100 400 Z" fill="url(#neonGrad19)" stroke="#00FF7F" stroke-width="4" />
+
+                        <!-- Modern tech pattern -->
+                        <g stroke="#00FF7F" stroke-width="2" opacity="0.2">
+                            <line x1="200" y1="200" x2="600" y2="200" />
+                            <line x1="200" y1="300" x2="600" y2="300" />
+                            <line x1="200" y1="400" x2="600" y2="400" />
+                        </g>
+
+                        <!-- Text with modern edge style -->
+                        <g transform="translate(400, 300)">
+                            <text x="0" y="0" font-family="Righteous" font-size="44" fill="white" stroke="#FF1493"
+                                stroke-width="8" text-anchor="middle" dominant-baseline="middle">
+                                <tspan x="0" dy="-40">Unlocking vibe</tspan>
+                                <tspan x="0" dy="40">coding at</tspan>
+                                <tspan x="0" dy="40">enterprises</tspan>
+                            </text>
+                            <text x="0" y="0" font-family="Righteous" font-size="44" fill="white" text-anchor="middle"
+                                dominant-baseline="middle">
+                                <tspan x="0" dy="-40">Unlocking vibe</tspan>
+                                <tspan x="0" dy="40">coding at</tspan>
+                                <tspan x="0" dy="40">enterprises</tspan>
+                            </text>
+                        </g>
+                    </svg>
+                </div>
+                <div class="sticker-info">
+                    <p>Modern Edge + Speech Bubble + Neon Night</p>
+                </div>
+            </div>
+
+            <!-- Sticker 20: Message 2 + Synthwave + Star-burst + Forest Tech -->
+            <div class="sticker-container">
+                <div class="sticker">
+                    <svg width="200" height="200" viewBox="0 0 800 800">
+                        <defs>
+                            <linearGradient id="forestGrad20" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" style="stop-color:#2ECC71" />
+                                <stop offset="100%" style="stop-color:#3498DB" />
+                            </linearGradient>
+                            <pattern id="grid20" x="0" y="0" width="40" height="40" patternUnits="userSpaceOnUse">
+                                <path d="M0 40 L40 0 M0 0 L40 40" stroke="#F1C40F" stroke-width="1" opacity="0.2" />
+                            </pattern>
+                        </defs>
+
+                        <!-- Star-burst background -->
+                        <g transform="translate(400, 400)">
+                            <path d="M0 -300 L100 -100 L300 0 L100 100 L0 300 L-100 100 L-300 0 L-100 -100 Z"
+                                fill="url(#forestGrad20)" stroke="#F1C40F" stroke-width="4" />
+                        </g>
+
+                        <!-- Grid overlay -->
+                        <g transform="translate(400, 400)">
+                            <path d="M0 -300 L100 -100 L300 0 L100 100 L0 300 L-100 100 L-300 0 L-100 -100 Z"
+                                fill="url(#grid20)" />
+                        </g>
+
+                        <!-- Text with synthwave style -->
+                        <g transform="translate(400, 400)">
+                            <text x="0" y="0" font-family="VT323" font-size="48" fill="white" stroke="#2ECC71"
+                                stroke-width="8" text-anchor="middle" dominant-baseline="middle">
+                                <tspan x="0" dy="-20">Vibe coding</tspan>
+                                <tspan x="0" dy="60">at enterprises</tspan>
+                            </text>
+                            <text x="0" y="0" font-family="VT323" font-size="48" fill="white" text-anchor="middle"
+                                dominant-baseline="middle">
+                                <tspan x="0" dy="-20">Vibe coding</tspan>
+                                <tspan x="0" dy="60">at enterprises</tspan>
+                            </text>
+                        </g>
+                    </svg>
+                </div>
+                <div class="sticker-info">
+                    <p>Synthwave + Star-burst + Forest Tech</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>

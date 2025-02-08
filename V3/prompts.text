@@ -1,0 +1,149 @@
+Context: These prompts are for generating sticker designs for an AI engineering conference. Each sticker should be a unique combination of copy, style, and color palette while maintaining a cohesive tech-meets-fun theme.
+
+IMPORTANT: The sticker copy/text below is FINAL and must NEVER be modified, reworded, or changed in any way. Only the visual styling should be iterated on.
+
+Sticker Copy (Core Messages):
+1. "Unlocking vibe coding at enterprises"
+2. "Vibe code with Cursor at work"
+3. "Pair programming with my AI bestie"
+4. "I sip coffee whilst Cursor codes"
+5. "Cursor cooks while I chill"
+
+Style Variations:
+1. Comic Book Hero
+- Bold, dynamic letters with starburst background
+- Primary colors (red, blue, yellow)
+- Speed lines angled 15-30 degrees from horizontal
+- Comic-style emphasis marks
+- Text outline must be 2-3px thick in contrasting color
+- Starburst points should extend 20-30px beyond text
+- Minimum of 8 points, maximum of 12 points
+- Points should vary in size by 20-30%
+- Recommended fonts: 'Permanent Marker', 'Carter One', 'Bungee Shade'
+
+2. Retro Tech
+- Chrome-like letterforms with minimum 3 tonal steps in gradient
+- Neon accents and 45-degree angle grid backgrounds
+- Color palette: Electric blue, hot pink, chrome silver
+- Scanlines should be 1px thick with 2px spacing
+- Specific pixel-style corner elements
+- Recommended fonts: 'VT323', 'Press Start 2P', 'Silkscreen'
+
+3. Kawaii Tech
+- Soft, rounded letterforms
+- Pastel color scheme (mint, lavender, peach)
+- Decorative elements: cute robots, hearts, stars
+- Gentle shadows and highlights
+- Recommended fonts: 'Fredoka One', 'Pacifico', 'Rubik Bubbles'
+
+4. Synthwave
+- 80s-inspired geometric patterns
+- Sunset gradient background (purple to orange)
+- Chrome or neon text treatment
+- Grid or wireframe elements at 45-degree angles
+- Recommended fonts: 'Righteous', 'Bungee Inline', 'VT323'
+
+5. Modern Edge
+- Bold, geometric sans-serif typography
+- High contrast duotone color schemes
+- Abstract tech patterns (circuits, nodes, data flows)
+- Negative space incorporating tech symbols
+- Sharp angles and asymmetric layouts
+- Minimalist iconography with dynamic positioning
+- Recommended fonts: 'Righteous', 'Bungee Inline', 'Carter One'
+
+6. Bubble Text
+- Multi-layered text with offset shadows
+- Playful, bouncy letterforms
+- Bright color combinations
+- Animated-style movement lines
+- Recommended fonts: 'Rubik Bubbles', 'Fredoka One', 'Carter One'
+
+Design Requirements:
+- Each sticker should maintain readability at both large and small sizes
+- Text must dynamically determine background shape size (no fixed circles/squares)
+- Background shapes should "hug" text content with consistent padding of 24-32px
+- For multi-line text, maintain equal vertical spacing between lines
+- Text should never overflow or touch the container edges
+- Maximum width/height ratio should be 3:1 to prevent overly wide/tall designs
+- Minimum contrast ratio of 4.5:1 between text and background
+- Text must include either:
+  * Strong outline (2-3px) in contrasting color
+  * Drop shadow with 30-40% opacity, 2-4px offset
+- No transparent or semi-transparent text allowed
+- Avoid placing light text on light backgrounds or dark text on dark backgrounds
+- Include subtle visual container or border that follows the background shape
+- Incorporate at least one tech-related visual element
+- Maintain consistent sizing across all variations
+- Export as vector-ready format
+
+Background Shape Variations:
+- Asymmetric blob (organic shape with 4-6 curved segments)
+- Hexagon with rounded corners (corner radius 8-12px)
+- Dynamic speech bubble with pointer
+- Geometric burst (8-12 points with varying lengths)
+- Wavy rectangle (amplitude 12-16px, 3-4 waves per side)
+
+Color Palettes:
+1. Cyber Pop
+   - Primary: #FF00FF (Magenta)
+   - Secondary: #00FFFF (Cyan)
+   - Accent: #FFFF00 (Yellow)
+   - Gradient: Primary to Secondary, 45-degree angle
+   - Text outline: Accent color
+   - No yellow text on cyan background
+
+2. Forest Tech
+   - Primary: #2ECC71 (Emerald)
+   - Secondary: #3498DB (Blue)
+   - Accent: #F1C40F (Yellow)
+   - Gradient: Primary to Secondary, 60-degree angle
+   - Text outline: Dark variant of Primary
+   - No emerald text on blue background
+
+3. Night Mode
+   - Primary: #2C3E50 (Dark Blue)
+   - Secondary: #E74C3C (Red)
+   - Accent: #ECF0F1 (Light Gray)
+   - Gradient: Primary to Secondary, 30-degree angle
+   - Text outline: Accent color
+   - No dark blue text on red background
+
+4. Pastel Tech
+   - Primary: #FFB6C1 (Light Pink)
+   - Secondary: #98FB98 (Pale Green)
+   - Accent: #4A90E2 (Darker Blue)
+   - Gradient: Primary to Secondary, 15-degree angle
+   - Text outline: Accent color
+   - No pale green text on light pink background
+
+Technical Requirements:
+- Minimum export size: 800x800px
+- Vector paths must be fully closed
+- No raster effects or bitmap patterns
+- Text must be converted to outlines
+- Maximum of 3 gradient stops per element
+- Minimum stroke width: 2px
+- Maximum stroke width: 4px
+
+Layout Hierarchy:
+1. Primary container shape (background)
+2. Secondary decorative elements (25-30% opacity)
+3. Text container/backing shape
+4. Text with effects (outline/shadow)
+5. Accent elements (icons, symbols)
+6. Optional overlay patterns (15-20% opacity)
+
+Style Unification Rules:
+- Consistent corner radius across all elements (8px or 12px)
+- Matching stroke weights within each design
+- Uniform padding ratios (text-to-container: 1:4)
+- Consistent shadow angles (45 degrees) and offsets (4px)
+
+Instructions for Generation:
+1. Use EXACTLY one of the provided copy messages - NO modifications to the text are allowed
+2. Choose one style variation
+3. Apply one color palette
+4. Ensure consistent sizing and readability
+5. Add appropriate tech-themed decorative elements
+6. Generate vector-ready output

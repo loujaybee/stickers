@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sticker Designs V4</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Carter+One&family=Bungee+Shade&family=VT323&family=Press+Start+2P&family=Silkscreen&family=Fredoka+One&family=Pacifico&family=Rubik+Bubbles&family=Righteous&family=Bungee+Inline&display=swap"
+        rel="stylesheet">
+    <style>
+        body {
+            background: #f0f0f0;
+            padding: 20px;
+            font-family: system-ui, -apple-system, sans-serif;
+        }
+
+        .sticker-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .sticker {
+            aspect-ratio: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            border-radius: 50%;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        .sticker-content {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            overflow: hidden;
+            border-radius: inherit;
+        }
+
+        .sticker-text {
+            text-align: center;
+            position: relative;
+            z-index: 2;
+            padding: 20px;
+            max-width: 85%;
+            line-height: 1.2;
+        }
+
+        /* Preserved Approved Stickers */
+        #sticker3 {
+            /* APPROVED - DO NOT MODIFY */
+            background: linear-gradient(45deg, #2ECC71, #3498DB);
+            font-family: 'Fredoka One', cursive;
+            font-size: 1.8em;
+            color: white;
+        }
+
+        #sticker5 {
+            /* APPROVED - Reduced padding version */
+            background: linear-gradient(135deg, #FF00FF, #00FFFF);
+            font-family: 'Righteous', sans-serif;
+            font-size: 2em;
+            padding: 10px;
+            color: white;
+        }
+
+        #sticker12 {
+            /* APPROVED - DO NOT MODIFY */
+            background: linear-gradient(180deg, #2C3E50, #E74C3C);
+            font-family: 'Press Start 2P', cursive;
+            font-size: 1.5em;
+            color: #ECF0F1;
+        }
+
+        #sticker17 {
+            /* APPROVED - DO NOT MODIFY */
+            background: linear-gradient(90deg, #FFB6C1, #4A90E2);
+            font-family: 'Bungee Inline', cursive;
+            font-size: 1.8em;
+            color: #2C3E50;
+        }
+
+        #sticker18 {
+            /* APPROVED - DO NOT MODIFY */
+            background: radial-gradient(circle at center, #F1C40F, #E74C3C);
+            font-family: 'Carter One', cursive;
+            font-size: 2em;
+            color: white;
+        }
+
+        /* New Sticker Styles with Updated Requirements */
+        .comic-hero {
+            background: radial-gradient(circle at center, #FF0000, #0000FF);
+            font-family: 'Carter One', cursive;
+            font-size: 2em;
+            color: white;
+            text-shadow:
+                -2px -2px 0 #000,
+                2px -2px 0 #000,
+                -2px 2px 0 #000,
+                2px 2px 0 #000;
+        }
+
+        .retro-tech {
+            background: linear-gradient(45deg, #00FFFF, #FF00FF);
+            font-family: 'Press Start 2P', monospace;
+            font-size: 1.5em;
+            color: white;
+            text-shadow:
+                2px 2px 0 rgba(0, 0, 0, 0.8),
+                -2px -2px 0 rgba(0, 0, 0, 0.8);
+        }
+
+        .kawaii {
+            background: linear-gradient(135deg, #FFB6C1, #98FB98);
+            font-family: 'Fredoka One', cursive;
+            font-size: 1.8em;
+            color: #2C3E50;
+            text-shadow:
+                1px 1px 0 white,
+                -1px -1px 0 white,
+                1px -1px 0 white,
+                -1px 1px 0 white;
+        }
+
+        .synthwave {
+            background: linear-gradient(180deg, #FF00FF, #00FFFF);
+            font-family: 'Righteous', sans-serif;
+            font-size: 2em;
+            color: white;
+            text-shadow:
+                2px 2px 4px rgba(0, 0, 0, 0.8),
+                -2px -2px 4px rgba(0, 0, 0, 0.8);
+        }
+
+        .modern-edge {
+            background: linear-gradient(90deg, #2C3E50, #E74C3C);
+            font-family: 'Bungee Inline', cursive;
+            font-size: 1.8em;
+            color: white;
+            text-shadow:
+                1px 1px 0 rgba(0, 0, 0, 0.8),
+                -1px -1px 0 rgba(0, 0, 0, 0.8);
+        }
+
+        .bubble {
+            background: radial-gradient(circle at center, #4A90E2, #2ECC71);
+            font-family: 'Rubik Bubbles', cursive;
+            font-size: 1.8em;
+            color: white;
+            text-shadow:
+                2px 2px 0 rgba(0, 0, 0, 0.8),
+                -2px -2px 0 rgba(0, 0, 0, 0.8);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="sticker-grid">
+        <!-- Preserved Approved Stickers -->
+        <div id="sticker3" class="sticker">
+            <div class="sticker-content">
+                <div class="sticker-text">Vibe code with Cursor at work</div>
+            </div>
+        </div>
+        <div id="sticker5" class="sticker">
+            <div class="sticker-content">
+                <div class="sticker-text">I sip coffee whilst Cursor codes</div>
+            </div>
+        </div>
+        <div id="sticker12" class="sticker">
+            <div class="sticker-content">
+                <div class="sticker-text">Pair programming with my AI bestie</div>
+            </div>
+        </div>
+        <div id="sticker17" class="sticker">
+            <div class="sticker-content">
+                <div class="sticker-text">Cursor cooks while I chill</div>
+            </div>
+        </div>
+        <div id="sticker18" class="sticker">
+            <div class="sticker-content">
+                <div class="sticker-text">Vibe coding at enterprises</div>
+            </div>
+        </div>
+
+        <!-- New Stickers with Updated Requirements -->
+        <div class="sticker comic-hero">
+            <div class="sticker-content">
+                <div class="sticker-text">Unlocking vibe coding at enterprises</div>
+            </div>
+        </div>
+        <div class="sticker retro-tech">
+            <div class="sticker-content">
+                <div class="sticker-text">Vibe code with Cursor at work</div>
+            </div>
+        </div>
+        <div class="sticker kawaii">
+            <div class="sticker-content">
+                <div class="sticker-text">Pair programming with my AI bestie</div>
+            </div>
+        </div>
+        <div class="sticker synthwave">
+            <div class="sticker-content">
+                <div class="sticker-text">I sip coffee whilst Cursor codes</div>
+            </div>
+        </div>
+        <div class="sticker modern-edge">
+            <div class="sticker-content">
+                <div class="sticker-text">Cursor cooks while I chill</div>
+            </div>
+        </div>
+        <div class="sticker bubble">
+            <div class="sticker-content">
+                <div class="sticker-text">Vibe coding at enterprises</div>
+            </div>
+        </div>
+        <div class="sticker comic-hero" style="background: radial-gradient(circle at center, #FFFF00, #FF0000);">
+            <div class="sticker-content">
+                <div class="sticker-text">Unlocking vibe coding at enterprises</div>
+            </div>
+        </div>
+        <div class="sticker retro-tech" style="background: linear-gradient(225deg, #FF00FF, #4A90E2);">
+            <div class="sticker-content">
+                <div class="sticker-text">Vibe code with Cursor at work</div>
+            </div>
+        </div>
+        <div class="sticker kawaii" style="background: linear-gradient(90deg, #98FB98, #FFB6C1);">
+            <div class="sticker-content">
+                <div class="sticker-text">Pair programming with my AI bestie</div>
+            </div>
+        </div>
+        <div class="sticker synthwave" style="background: linear-gradient(135deg, #E74C3C, #2C3E50);">
+            <div class="sticker-content">
+                <div class="sticker-text">I sip coffee whilst Cursor codes</div>
+            </div>
+        </div>
+        <div class="sticker modern-edge" style="background: linear-gradient(45deg, #4A90E2, #2ECC71);">
+            <div class="sticker-content">
+                <div class="sticker-text">Cursor cooks while I chill</div>
+            </div>
+        </div>
+        <div class="sticker bubble" style="background: radial-gradient(circle at center, #FF00FF, #FFFF00);">
+            <div class="sticker-content">
+                <div class="sticker-text">Vibe coding at enterprises</div>
+            </div>
+        </div>
+        <div class="sticker comic-hero" style="background: radial-gradient(circle at center, #2ECC71, #3498DB);">
+            <div class="sticker-content">
+                <div class="sticker-text">Unlocking vibe coding at enterprises</div>
+            </div>
+        </div>
+        <div class="sticker retro-tech" style="background: linear-gradient(315deg, #00FFFF, #FF00FF);">
+            <div class="sticker-content">
+                <div class="sticker-text">Vibe code with Cursor at work</div>
+            </div>
+        </div>
+        <div class="sticker kawaii" style="background: linear-gradient(180deg, #FFB6C1, #4A90E2);">
+            <div class="sticker-content">
+                <div class="sticker-text">Pair programming with my AI bestie</div>
+            </div>
+        </div>
+        <div class="sticker synthwave" style="background: linear-gradient(90deg, #F1C40F, #E74C3C);">
+            <div class="sticker-content">
+                <div class="sticker-text">I sip coffee whilst Cursor codes</div>
+            </div>
+        </div>
+        <div class="sticker modern-edge" style="background: linear-gradient(135deg, #2C3E50, #4A90E2);">
+            <div class="sticker-content">
+                <div class="sticker-text">Cursor cooks while I chill</div>
+            </div>
+        </div>
+        <div class="sticker bubble" style="background: radial-gradient(circle at center, #3498DB, #2ECC71);">
+            <div class="sticker-content">
+                <div class="sticker-text">Vibe coding at enterprises</div>
+            </div>
+        </div>
+        <div class="sticker comic-hero" style="background: radial-gradient(circle at center, #E74C3C, #F1C40F);">
+            <div class="sticker-content">
+                <div class="sticker-text">Unlocking vibe coding at enterprises</div>
+            </div>
+        </div>
+        <div class="sticker retro-tech" style="background: linear-gradient(45deg, #4A90E2, #FF00FF);">
+            <div class="sticker-content">
+                <div class="sticker-text">Vibe code with Cursor at work</div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

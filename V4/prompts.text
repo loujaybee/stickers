@@ -1,0 +1,125 @@
+Context: These prompts are for generating sticker designs for an AI engineering conference. Each sticker should be a unique combination of copy, style, and color palette while maintaining a cohesive tech-meets-fun theme.
+
+IMPORTANT NOTES:
+- The sticker copy/text below is FINAL and must NEVER be modified, reworded, or changed in any way. Only the visual styling should be iterated on.
+- Stickers marked as "APPROVED" in the HTML comments must be preserved exactly as they are and not regenerated.
+
+Sticker Copy (Core Messages):
+1. "Unlocking vibe coding at enterprises"
+2. "Vibe coding at enterprises"
+3. "Vibe code with Cursor at work"
+4. "Pair programming with my AI bestie"
+5. "I sip coffee whilst Cursor codes"
+6. "Cursor cooks while I chill"
+
+CRITICAL DESIGN REQUIREMENTS:
+1. Text Readability (HIGHEST PRIORITY):
+   - ALL text MUST have a contrasting outline (white outline on dark backgrounds, grey/dark outline on light backgrounds)
+   - Minimum contrast ratio of 4.5:1 between text and background colors
+   - Font weights should be bold/chunky - avoid thin or light weights
+   - Black text must always have a light outline for readability
+
+2. Alignment and Spacing:
+   - Text MUST be perfectly centered both horizontally and vertically
+   - Text must stay completely within the background shape boundaries
+   - Minimum padding of 20px between text and background edges
+   - Background shapes should be properly sized to contain text
+
+Style Variations:
+1. Comic Book Hero
+- Bold, dynamic letters with starburst background
+- Primary colors (red, blue, yellow)
+- Speed lines and explosion outlines
+- Comic-style emphasis marks
+- MANDATORY: Strong contrasting text outline
+- Text must maintain clear legibility against any background color
+- Recommended fonts: 'Permanent Marker', 'Carter One', 'Bungee Shade'
+
+2. Retro Tech
+- Chrome-like letterforms with gradient
+- Neon accents and grid backgrounds
+- Color palette: Electric blue, hot pink, chrome silver
+- Optional: scanlines or circuit board patterns
+- Recommended fonts: 'VT323', 'Press Start 2P', 'Silkscreen'
+
+3. Kawaii Tech
+- Soft, rounded letterforms
+- Pastel color scheme (mint, lavender, peach)
+- Decorative elements: cute robots, hearts, stars
+- Gentle shadows and highlights
+- Recommended fonts: 'Fredoka One', 'Pacifico', 'Rubik Bubbles'
+
+4. Synthwave
+- 80s-inspired geometric patterns
+- Sunset gradient background (purple to orange)
+- Chrome or neon text treatment
+- Optional: grid or wireframe elements
+- Recommended fonts: 'Righteous', 'Bungee Inline', 'VT323'
+
+5. Modern Edge
+- Bold, geometric sans-serif typography
+- High contrast duotone color schemes
+- Abstract tech patterns (circuits, nodes, data flows)
+- Negative space incorporating tech symbols
+- Sharp angles and asymmetric layouts
+- Minimalist iconography with dynamic positioning
+- Recommended fonts: 'Righteous', 'Bungee Inline', 'Carter One'
+
+6. Bubble Text
+- Multi-layered text with offset shadows
+- Playful, bouncy letterforms
+- Bright color combinations
+- Optional: animated-style movement lines
+- Recommended fonts: 'Rubik Bubbles', 'Fredoka One', 'Carter One'
+
+Design Requirements:
+- Each sticker should maintain readability at both large and small sizes
+- Text should be perfectly centered and aligned within the design space
+- Background shapes can vary (circles, hexagons, organic shapes, etc.) - not limited to squares
+- Include subtle visual container or border that follows the background shape
+- Incorporate at least one tech-related visual element
+- Maintain consistent sizing across all variations
+- Export as vector-ready format
+
+Color Palettes (Updated with Contrast Requirements):
+1. Cyber Pop
+   - Primary: #FF00FF (Magenta)
+   - Secondary: #00FFFF (Cyan)
+   - Accent: #FFFF00 (Yellow)
+   - Text Colors: White or Black with contrasting outline
+
+2. Forest Tech
+   - Primary: #2ECC71 (Emerald)
+   - Secondary: #3498DB (Blue)
+   - Accent: #F1C40F (Yellow)
+   - Text Colors: White with dark outline
+
+3. Night Mode
+   - Primary: #2C3E50 (Dark Blue)
+   - Secondary: #E74C3C (Red)
+   - Accent: #ECF0F1 (Light Gray)
+   - Text Colors: White with dark outline
+
+4. Pastel Tech
+   - Primary: #FFB6C1 (Light Pink)
+   - Secondary: #98FB98 (Pale Green)
+   - Accent: #4A90E2 (Darker Blue)
+   - Text Colors: Dark with light outline
+
+Instructions for Generation:
+1. Use EXACTLY one of the provided copy messages - NO modifications to the text are allowed
+2. Choose one style variation
+3. Apply one color palette
+4. Ensure consistent sizing and readability
+5. Add appropriate tech-themed decorative elements
+6. Generate vector-ready output
+7. Check if sticker is marked as "APPROVED" - if so, preserve existing design
+
+/* APPROVED STICKERS - DO NOT REGENERATE */
+<!--
+Sticker #3: Original design approved
+Sticker #5: Approved (reduce padding)
+Sticker #12: Original design approved
+Sticker #17: Original design approved
+Sticker #18: Original design approved
+--> 

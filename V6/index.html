@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cursor Stickers V6</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Carter+One&family=Bungee+Shade&family=VT323&family=Press+Start+2P&family=Silkscreen&family=Fredoka+One&family=Pacifico&family=Rubik+Bubbles&family=Righteous&family=Bungee+Inline&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: #f0f2f5;
+            font-family: system-ui, -apple-system, sans-serif;
+            padding: 2rem;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 2rem;
+            color: #2C3E50;
+        }
+
+        .sticker-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            padding: 1rem;
+        }
+
+        .sticker-container {
+            background: white;
+            border-radius: 12px;
+            padding: 1rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .sticker-info {
+            margin-top: 1rem;
+            text-align: center;
+            font-size: 0.875rem;
+            color: #666;
+        }
+
+        .sticker {
+            width: 200px;
+            height: 200px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Cursor Stickers V6</h1>
+        <div class="sticker-grid">
+            <!-- Sticker 1: Message 1 + Comic Hero + Hexagon + Cyber Pop + Muscular Monitor Flexing -->
+            <div class="sticker-container">
+                <div class="sticker">
+                    <svg width="200" height="200" viewBox="0 0 800 800">
+                        <defs>
+                            <linearGradient id="cyberGrad1" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" style="stop-color:#FF00FF" />
+                                <stop offset="100%" style="stop-color:#00FFFF" />
+                            </linearGradient>
+                            <clipPath id="hexClip1">
+                                <path d="M400 100 L700 250 L700 550 L400 700 L100 550 L100 250 Z" />
+                            </clipPath>
+                        </defs>
+
+                        <!-- Background hexagon -->
+                        <path d="M400 100 L700 250 L700 550 L400 700 L100 550 L100 250 Z" fill="url(#cyberGrad1)"
+                            stroke="#FFFF00" stroke-width="4" />
+
+                        <!-- Starburst lines -->
+                        <g clip-path="url(#hexClip1)" stroke="#FFFF00" stroke-width="2" opacity="0.3">
+                            <line x1="400" y1="400" x2="700" y2="100" />
+                            <line x1="400" y1="400" x2="700" y2="700" />
+                            <line x1="400" y1="400" x2="100" y2="700" />
+                            <line x1="400" y1="400" x2="100" y2="100" />
+                        </g>
+
+                        <!-- POW Effect -->
+                        <g transform="translate(400, 250)">
+                            <path d="M-120 -20 L120 -20 L80 40 L-80 40 Z" fill="#FFFF00" stroke="#FF00FF"
+                                stroke-width="3" />
+                            <text x="0" y="20" font-family="Carter One" font-size="36" fill="#FF00FF"
+                                text-anchor="middle">POW!</text>
+                        </g>
+
+                        <!-- Muscular Monitor Hero -->
+                        <g transform="translate(400, 300)">
+                            <!-- Monitor Body -->
+                            <rect x="-60" y="-50" width="120" height="80" rx="10" fill="#333" stroke="#FFFF00"
+                                stroke-width="3" />
+                            <!-- Screen -->
+                            <rect x="-50" y="-40" width="100" height="60" fill="#00FFFF" stroke="#FFFF00"
+                                stroke-width="2" />
+                            <!-- Determined Face -->
+                            <circle cx="-20" cy="-10" r="8" fill="#333" />
+                            <circle cx="20" cy="-10" r="8" fill="#333" />
+                            <path d="M-25 15 Q0 25 25 15" fill="none" stroke="#333" stroke-width="4" />
+                            <!-- Muscular Arms -->
+                            <path d="M-60 -20 Q-90 -30 -100 -60 Q-110 -70 -90 -75 Q-70 -80 -60 -40" fill="#333"
+                                stroke="#FFFF00" stroke-width="3" />
+                            <path d="M60 -20 Q90 -30 100 -60 Q110 -70 90 -75 Q70 -80 60 -40" fill="#333"
+                                stroke="#FFFF00" stroke-width="3" />
+                            <!-- Flexing Biceps -->
+                            <circle cx="-95" cy="-65" r="15" fill="#333" stroke="#FFFF00" stroke-width="3" />
+                            <circle cx="95" cy="-65" r="15" fill="#333" stroke="#FFFF00" stroke-width="3" />
+                            <!-- Dynamic Cape -->
+                            <path d="M-70 -30 Q-100 0 -80 100 L80 100 Q100 0 70 -30" fill="#FF00FF" stroke="#FFFF00"
+                                stroke-width="3">
+                                <animate attributeName="d" values="M-70 -30 Q-100 0 -80 100 L80 100 Q100 0 70 -30;
+                                            M-70 -30 Q-120 20 -100 100 L100 100 Q120 20 70 -30;
+                                            M-70 -30 Q-100 0 -80 100 L80 100 Q100 0 70 -30" dur="2s"
+                                    repeatCount="indefinite" />
+                            </path>
+                        </g>
+
+                        <!-- Speed Lines -->
+                        <g stroke="#FFFF00" stroke-width="2" opacity="0.5">
+                            <line x1="100" y1="200" x2="200" y2="200" />
+                            <line x1="600" y1="200" x2="700" y2="200" />
+                            <line x1="100" y1="400" x2="200" y2="400" />
+                            <line x1="600" y1="400" x2="700" y2="400" />
+                        </g>
+
+                        <!-- Text with outline -->
+                        <g transform="translate(400, 500)">
+                            <text x="0" y="0" font-family="Permanent Marker" font-size="48" fill="white" stroke="black"
+                                stroke-width="8" text-anchor="middle" dominant-baseline="middle">
+                                <tspan x="0" dy="-20">Unlocking vibe</tspan>
+                                <tspan x="0" dy="60">coding at</tspan>
+                                <tspan x="0" dy="60">enterprises</tspan>
+                            </text>
+                            <text x="0" y="0" font-family="Permanent Marker" font-size="48" fill="white"
+                                text-anchor="middle" dominant-baseline="middle">
+                                <tspan x="0" dy="-20">Unlocking vibe</tspan>
+                                <tspan x="0" dy="60">coding at</tspan>
+                                <tspan x="0" dy="60">enterprises</tspan>
+                            </text>
+                        </g>
+                    </svg>
+                </div>
+                <div class="sticker-info">
+                    <p>Comic Hero + Hexagon + Cyber Pop + Muscular Monitor Flexing</p>
+                </div>
+            </div>
+
+            <!-- Sticker 2: Message 2 + Retro Tech + Circuit Board + Night Mode + Vintage Computer -->
+            <div class="sticker-container">
+                <div class="sticker">
+                    <svg width="200" height="200" viewBox="0 0 800 800">
+                        <defs>
+                            <linearGradient id="nightGrad2" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" style="stop-color:#2C3E50" />
+                                <stop offset="100%" style="stop-color:#E74C3C" />
+                            </linearGradient>
+                            <pattern id="circuitPattern" x="0" y="0" width="100" height="100"
+                                patternUnits="userSpaceOnUse">
+                                <path d="M10 10 H90 V90 H10 Z" fill="none" stroke="#ECF0F1" stroke-width="2"
+                                    opacity="0.2" />
+                                <circle cx="10" cy="10" r="3" fill="#ECF0F1" opacity="0.2" />
+                                <circle cx="90" cy="90" r="3" fill="#ECF0F1" opacity="0.2" />
+                                <line x1="10" y1="10" x2="90" y2="90" stroke="#ECF0F1" stroke-width="2" opacity="0.2" />
+                            </pattern>
+                        </defs>
+
+                        <!-- Circuit board background -->
+                        <path d="M100 200 Q400 100 700 200 Q800 400 700 600 Q400 700 100 600 Q0 400 100 200 Z"
+                            fill="url(#nightGrad2)" stroke="#ECF0F1" stroke-width="4" />
+
+                        <!-- Circuit pattern overlay -->
+                        <path d="M100 200 Q400 100 700 200 Q800 400 700 600 Q400 700 100 600 Q0 400 100 200 Z"
+                            fill="url(#circuitPattern)" />
+
+                        <!-- Vintage Computer -->
+                        <g transform="translate(400, 300)">
+                            <!-- CRT Monitor -->
+                            <rect x="-80" y="-60" width="160" height="120" rx="15" fill="#95A5A6" stroke="#ECF0F1"
+                                stroke-width="3" />
+                            <!-- Screen -->
+                            <rect x="-70" y="-50" width="140" height="100" fill="#2C3E50" stroke="#ECF0F1"
+                                stroke-width="2" />
+                            <!-- Screen Scan Lines -->
+                            <g clip-path="url(#screenClip2)">
+                                <path d="M-70 -50 h140" stroke="#ECF0F1" stroke-width="1" opacity="0.3" />
+                                <path d="M-70 -40 h140" stroke="#ECF0F1" stroke-width="1" opacity="0.3" />
+                                <path d="M-70 -30 h140" stroke="#ECF0F1" stroke-width="1" opacity="0.3" />
+                            </g>
+                            <!-- Keyboard -->
+                            <rect x="-60" y="70" width="120" height="40" rx="5" fill="#95A5A6" stroke="#ECF0F1"
+                                stroke-width="2" />
+                            <!-- Floppy Drive -->
+                            <rect x="-20" y="20" width="40" height="10" rx="2" fill="#95A5A6" stroke="#ECF0F1"
+                                stroke-width="1" />
+                        </g>
+
+                        <!-- Text with chrome effect -->
+                        <g transform="translate(400, 500)">
+                            <text x="0" y="0" font-family="Press Start 2P" font-size="40" fill="white" stroke="#2C3E50"
+                                stroke-width="8" text-anchor="middle" dominant-baseline="middle">
+                                <tspan x="0" dy="-20">Vibe coding</tspan>
+                                <tspan x="0" dy="60">at enterprises</tspan>
+                            </text>
+                            <text x="0" y="0" font-family="Press Start 2P" font-size="40" fill="white"
+                                text-anchor="middle" dominant-baseline="middle">
+                                <tspan x="0" dy="-20">Vibe coding</tspan>
+                                <tspan x="0" dy="60">at enterprises</tspan>
+                            </text>
+                        </g>
+                    </svg>
+                </div>
+                <div class="sticker-info">
+                    <p>Retro Tech + Circuit Board + Night Mode + Vintage Computer</p>
+                </div>
+            </div>
+
+            <!-- Sticker 3: Message 3 + Kawaii Tech + Cloud Shape + Pastel Tech + Cute Robot -->
+            <div class="sticker-container">
+                <div class="sticker">
+                    <svg width="200" height="200" viewBox="0 0 800 800">
+                        <defs>
+                            <linearGradient id="pastelGrad3" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" style="stop-color:#FFB6C1" />
+                                <stop offset="100%" style="stop-color:#98FB98" />
+                            </linearGradient>
+                        </defs>
+
+                        <!-- Cloud shape background -->
+                        <path d="M200 300 
+                                C200 250 300 200 400 200 
+                                C500 200 600 250 600 300
+                                C650 300 700 350 700 400
+                                C700 450 650 500 600 500
+                                C600 550 500 600 400 600
+                                C300 600 200 550 200 500
+                                C150 500 100 450 100 400
+                                C100 350 150 300 200 300Z" fill="url(#pastelGrad3)" stroke="#4A90E2"
+                            stroke-width="4" />
+
+                        <!-- Cute Robot -->
+                        <g transform="translate(400, 300)">
+                            <!-- Robot Head -->
+                            <rect x="-40" y="-40" width="80" height="80" rx="20" fill="#FFB6C1" stroke="#4A90E2"
+                                stroke-width="3" />
+                            <!-- Robot Eyes -->
+                            <circle cx="-15" cy="-10" r="8" fill="#4A90E2" />
+                            <circle cx="15" cy="-10" r="8" fill="#4A90E2" />
+                            <!-- Robot Smile -->
+                            <path d="M-20 20 Q0 35 20 20" fill="none" stroke="#4A90E2" stroke-width="3" />
+                            <!-- Robot Antennae -->
+                            <line x1="-20" y1="-40" x2="-30" y2="-60" stroke="#4A90E2" stroke-width="3" />
+                            <line x1="20" y1="-40" x2="30" y2="-60" stroke="#4A90E2" stroke-width="3" />
+                            <circle cx="-30" cy="-60" r="5" fill="#98FB98" />
+                            <circle cx="30" cy="-60" r="5" fill="#98FB98" />
+                            <!-- Robot Arms -->
+                            <path d="M-40 0 Q-60 10 -70 -10" fill="none" stroke="#4A90E2" stroke-width="3" />
+                            <path d="M40 0 Q60 10 70 -10" fill="none" stroke="#4A90E2" stroke-width="3" />
+                        </g>
+
+                        <!-- Decorative Elements -->
+                        <g transform="translate(400, 400)">
+                            <circle cx="-100" cy="-100" r="10" fill="#4A90E2" opacity="0.5" />
+                            <circle cx="100" cy="-100" r="10" fill="#4A90E2" opacity="0.5" />
+                            <circle cx="0" cy="100" r="10" fill="#4A90E2" opacity="0.5" />
+                        </g>
+
+                        <!-- Text with cute style -->
+                        <g transform="translate(400, 500)">
+                            <text x="0" y="0" font-family="Fredoka One" font-size="48" fill="#4A90E2" stroke="white"
+                                stroke-width="8" text-anchor="middle" dominant-baseline="middle">
+                                <tspan x="0" dy="-20">Vibe code with</tspan>
+                                <tspan x="0" dy="60">Cursor at work</tspan>
+                            </text>
+                            <text x="0" y="0" font-family="Fredoka One" font-size="48" fill="#4A90E2"
+                                text-anchor="middle" dominant-baseline="middle">
+                                <tspan x="0" dy="-20">Vibe code with</tspan>
+                                <tspan x="0" dy="60">Cursor at work</tspan>
+                            </text>
+                        </g>
+                    </svg>
+                </div>
+                <div class="sticker-info">
+                    <p>Kawaii Tech + Cloud Shape + Pastel Tech + Cute Robot</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
