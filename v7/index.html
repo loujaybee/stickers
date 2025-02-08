@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Retro Pop Stickers</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Righteous&family=Rubik:wght@700&family=Pacifico&display=swap"
+        rel="stylesheet">
+    <style>
+        :root {
+            --primary-blue: #2B4BF2;
+            --coral-red: #FF5544;
+            --soft-pink: #FFB6C1;
+            --off-white: #FFFFFF;
+            --light-gray: #E5E5E5;
+        }
+
+        body {
+            margin: 0;
+            min-height: 100vh;
+            background: #1a1a1a;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+            padding: 2rem;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .sticker {
+            background: var(--off-white);
+            padding: 1.5rem;
+            border-radius: 8px;
+            position: relative;
+            font-family: 'Archivo Black', sans-serif;
+            color: var(--primary-blue);
+            min-width: 120px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            transform: rotate(-2deg);
+            transition: transform 0.3s ease;
+        }
+
+        .sticker::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            border: 1px solid var(--light-gray);
+            border-radius: inherit;
+            pointer-events: none;
+        }
+
+        .sticker:hover {
+            transform: rotate(0deg) scale(1.05);
+        }
+
+        /* Pop Love Sticker */
+        .sticker.pop-love {
+            clip-path: polygon(10% 0, 90% 0, 100% 10%, 100% 90%, 90% 100%, 10% 100%, 0 90%, 0 10%);
+            background: linear-gradient(45deg, var(--coral-red), var(--soft-pink));
+            color: white;
+            font-size: 1.5rem;
+            padding: 2rem;
+        }
+
+        /* Super Cool Badge */
+        .sticker.super-cool {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            background: var(--primary-blue);
+            color: white;
+            font-family: 'Righteous', cursive;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            transform: rotate(5deg);
+        }
+
+        /* Good Vibes */
+        .sticker.good-vibes {
+            font-family: 'Pacifico', cursive;
+            color: var(--coral-red);
+            padding: 1.5rem 2.5rem;
+            border-radius: 25px;
+        }
+
+        /* New Wave */
+        .sticker.new-wave {
+            clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+            background: var(--primary-blue);
+            color: white;
+            padding: 3rem;
+            font-family: 'Rubik', sans-serif;
+        }
+
+        /* Style Life */
+        .sticker.style-life {
+            border-radius: 12px;
+            background: var(--soft-pink);
+            color: var(--primary-blue);
+            font-family: 'Archivo Black', sans-serif;
+            padding: 1.5rem 2rem;
+            transform: rotate(2deg);
+        }
+
+        .sticker.we-are-young {
+            background: var(--primary-blue);
+            color: white;
+            font-family: 'Righteous', cursive;
+            padding: 1.5rem 2.5rem;
+            border-radius: 30px;
+        }
+
+        .sticker.save-me {
+            clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
+            background: var(--coral-red);
+            color: white;
+            font-family: 'Archivo Black', sans-serif;
+            padding: 2rem;
+        }
+
+        .sticker.listen {
+            width: 180px;
+            height: 120px;
+            background: var(--primary-blue);
+            color: white;
+            font-family: 'Rubik', sans-serif;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 8px;
+        }
+
+        .sticker.now {
+            background: linear-gradient(135deg, var(--primary-blue), var(--coral-red));
+            color: white;
+            font-family: 'Archivo Black', sans-serif;
+            padding: 1.5rem 3rem;
+            border-radius: 4px;
+        }
+
+        .sticker.oh-yeah {
+            transform: rotate(-15deg);
+            background: var(--coral-red);
+            color: white;
+            font-family: 'Pacifico', cursive;
+            padding: 1.5rem 2.5rem;
+            border-radius: 16px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="sticker pop-love">Unlocking vibe coding at enterprises</div>
+    <div class="sticker super-cool">Vibe code with Cursor at work</div>
+    <div class="sticker good-vibes">Pair programming with my AI bestie</div>
+    <div class="sticker new-wave">I sip coffee whilst Cursor codes</div>
+    <div class="sticker style-life">Cursor cooks while I chill</div>
+    <div class="sticker we-are-young">We Are The Young</div>
+    <div class="sticker save-me">Save Me</div>
+    <div class="sticker listen">Listen</div>
+    <div class="sticker now">Now</div>
+    <div class="sticker oh-yeah">Oh Yeah!</div>
+</body>
+
+</html>
